@@ -1,0 +1,64 @@
+
+//colors
+
+$white: #ffffff;
+$primary:#FF4E00;
+$gradient:linear-gradient(205deg, #ff7a40,#ff4e00);                                           
+$black: #353232;
+//colors end
+
+*{
+    outline:none;
+}
+
+
+//fonts start
+
+@font-face {
+    font-family: 'Golos-bold';
+    src: url('../../fonts/GolosText-Bold.ttf');
+}
+@font-face {
+    font-family: 'Golos-med';
+    src: url('../../fonts/GolosText-Medium.ttf');
+}
+@font-face {
+    font-family: 'Golos-Reg';
+    src: url('../../fonts/GolosText-Regular.ttf');
+}
+@font-face {
+    font-family: 'Golos-Semi';
+    src: url('../../fonts/GolosText-SemiBold.ttf');
+}
+
+.h1{
+    font-family: 'Golos-bold';
+    font-size:48px;
+    color:$black;
+    line-height: 55px;
+}
+.p{
+    font-family: 'Golos-Reg';
+    font-size:18px;
+    line-height: 26px;
+}
+//fonts end
+
+ul{
+    margin:0;
+    padding:0;
+    li{
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+}
+img, iframe{
+    width:100%;
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+}
+
+
