@@ -1,0 +1,13 @@
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 30px;
+  z-index: 100;
+}
+header .desktop_header {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  max-width: 1280px;
+}/*# sourceMappingURL=header.css.map */
