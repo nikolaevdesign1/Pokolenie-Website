@@ -5,3 +5,12 @@ $('.section2_slider').slick({
     arrows: false,
     dots: true,
 })
+
+
+$('.section4-logos-slider').slick({
+    speed: 600,
+    autoplay:true,
+    arrows: false,
+    slidesToShow:7.3,
+    
+})
