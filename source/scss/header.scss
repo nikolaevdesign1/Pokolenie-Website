@@ -75,6 +75,35 @@ header{
                     font-size:14px;
                 }
             }
+            &.sub-menu{
+                position:relative;
+                ul{
+                    transition:all 0.3s ease 0s;
+                    opacity:0;
+                    visibility: hidden;;
+                    position:absolute;
+                    background:#fff;
+                    border-radius:10px;
+                    border:1px solid #eeeeee;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    z-index:3;
+                    top:30px;
+                    left:-20px;
+                    padding:10px 20px;
+                    li{
+                        margin:10px 0px;
+                    }
+                }
+                &:hover{
+                    ul{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
            
         }
     }

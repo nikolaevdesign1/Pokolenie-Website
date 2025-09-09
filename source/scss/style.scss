@@ -1519,6 +1519,1217 @@ body{
 // parents page end
 
 
+
+//student page start
+
+
+.parent-text{
+    ul{
+        margin-top:20px;
+        li{
+            list-style: disc;
+            margin-top:10px;
+            margin-left:15px;
+        }
+    }
+}
+
+.student-about{
+    margin-top:70px;
+    .student-about-header{
+        position:relative;
+        width:100%;
+        h1{
+            @extend .h1;
+        }
+    }
+    .student-about-content{
+        width:100%;
+        @include flex-center;
+        flex-direction: column;
+        .student-about-item{
+            width:100%;
+            margin-top:16px;
+            @include flex-between;
+            border:1px solid #E6E6E6;
+            border-radius:20px;
+            background:linear-gradient(180deg, #FFFFFF,#D6D6D6);
+            .student-about-item-image{
+                width:40%;
+                margin:12px;
+                border-radius:16px;
+                overflow:hidden;
+                img{
+                    width:100%;
+                    height:275px;
+                    object-fit: cover;
+                }
+            }
+            .student-about-item-text{
+                width:55%;
+                h1{
+                    color:$primary;
+                    @extend .h1;
+                    font-weight:500;
+                    margin:0;
+                    width:80%;
+                }
+                h2{
+                    color:$black;
+                    font-size:18px;
+                    font-weight:900;
+                    width:80%;
+                }
+                p{
+                    color:$black;
+                    font-size:18px;
+                    font-weight:400;
+                    width:80%;
+                }
+            }
+        }
+
+    }
+}
+
+.student-text-section{
+    margin-top:70px;
+    width:100%;
+    .students-text-section-flex{
+        width:100%;
+        @include flex-between;
+        .student-text-section-image{
+            width:40%;
+            img{
+                width:100%;
+                height:340px;
+                object-fit: cover;
+                border-radius:20px;
+            }
+        }
+        .student-text-section-content{
+            width:55%;
+            h1{
+                @extend .h2;
+                margin:0px;
+            }
+            p{
+                @extend .p;
+                font-weight: 400;
+                margin-top:20px;
+            }
+        }
+    }
+}
+
+.student-icons-section{
+    margin-top:70px;
+    position:relative;
+    width:100%;
+    .students-icons-section-content{
+        background-color:#f6f6f6;
+        position: relative;
+        border-radius:20px;
+        overflow:hidden;
+        width:100%;
+        .students-icons-section-content-background{
+            position: absolute;
+            z-index:1;
+            top:0;
+            right:0;
+            width:350px;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+        .students-icons-section-content-header{
+            width:90%;
+            margin:auto;
+            margin-top:50px;
+            h1{
+                @extend .h1;
+            }
+        }
+        .students-icons-section-content-header-flex{
+            @include flex-between;
+            flex-wrap: wrap;
+            width:90%;
+            margin:auto;
+            margin-bottom:50px;
+            .students-icons-section-content-header-item{
+                margin-top:50px;
+                width:32%;
+                img{
+                    width:50px;
+                    height:50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                p{
+                    margin-top:20px;
+                    @extend .p;
+                    font-weight:400;
+                    width:80%;
+                }
+            }
+        }
+    }
+}
+
+.students-adv{
+    margin-top:70px;
+    width:100%;
+    .students-adv-header{
+        width:100%;
+        position: relative;
+        h1{
+            @extend .h1;
+            width:80%;
+        }
+    }
+    .students-adv-flex{
+        margin-top:50px;
+        @include flex-between;
+        .students-adv-flex-item{
+            width:32%;
+            background:#F6F6F6;
+            border-radius:20px;
+            overflow:hidden;
+            .students-adv-item-image{
+                position:relative;
+                width:100%;
+                height:285px;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+                .students-adv-item-image-icon{
+                    width:50px;
+                    height:50px;
+                    position:absolute;
+                    right:10px;
+                    top:10px;
+                    z-index:5;
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .students-adv-item-content{
+                width:90%;
+                margin:20px auto;
+                height:220px;
+                h1{
+                    font-weight:600;
+                    margin-top:20px;
+                    font-size:18px;
+                    color:$black;
+                    width:90%;
+                }
+                p{
+                    font-weight:400;
+                    margin-top:20px;
+                    font-size:18px;
+                    line-height: 26px;
+                    color:$black;
+                    width:90%;
+                }
+            }
+        }
+    }
+}
+
+.students-text-right{
+    margin-top:70px;
+    .students-text-right-flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .student-text-right-left{
+            width:55%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            h1{
+                @extend .h1;
+                margin:0px;
+                width:90%;
+            }
+            h2{
+                @extend .p;
+                margin-top:32px;
+                font-weight:400;
+                width:90%;
+            }
+            .gradient_button{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top:70px;
+                a{
+                    @include gradient-button;
+                    width:320px;
+                }
+            }
+        }
+        .student-text-right-right{
+            width:45%;
+            height:400px;
+            border-radius:20px;
+            overflow:hidden;
+            img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.students-news{
+    margin-top:70px;
+    .students-news-header{
+        width:100%;
+        position: relative;
+        h1{
+            @extend .h1;
+            width:80%;
+        }
+        a{
+            position: absolute;
+            right:0;
+            bottom:0;
+            font-size:16px;
+            text-decoration: underline;
+            font-weight: 400;
+            color:$black;
+        }
+    }
+    .students-news-flex{
+        @include flex-between;
+        .students-news-flex-item{
+            width:32%;
+            background-color:#EEEEEE;
+            border-radius:20px;
+            overflow:hidden;
+            img{
+                width:100%;
+                height:280px;
+                object-fit: cover;
+            }
+            h1{
+                font-size:18px;
+                font-weight:400;
+                line-height: 26px;
+                width:90%;
+                margin:auto;
+                margin-top:20px;
+            }
+            p{
+                font-size:18px;
+                font-weight:600;
+                text-decoration: underline;
+                width:90%;
+                margin:auto;
+                margin-top:20px;
+                margin-bottom:50px;
+            }
+        }
+    }
+}
+
+
+
+
+//student page end
+
+//coaches page start
+
+
+.button-icons{
+    @include flex-between;
+    img{
+        width:120px;
+        height:120px;
+        margin-left:20px;
+    }
+}
+.coaches-adv-section{
+    margin-top:70px;
+    .coaches-adv-header{
+        width:100%;
+        h1{
+            @extend .h1;
+            width:80%;
+        }
+        p{
+            @extend .p;
+            width:80%;
+            font-weight:400;
+        }
+    }
+    .coaches-adv-flex{
+        @include flex-between;
+        margin-top:30px;
+        flex-wrap: wrap;
+        .coaches-adv-item{
+            width:49%;
+            margin-top:20px;
+            position:relative;
+            height:280px;
+            border-radius:20px;
+            overflow:hidden;
+            .coaches-adv-background-image{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index:1;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+            .coaches-adv-opacity{
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:2;
+                background-color:$black;
+                opacity:0.85;
+            }
+            .coaches-adv-content{
+                position:absolute;
+                bottom:25px;
+                left:25px;
+                z-index:3;
+                h1{
+                    color:$white;
+                    display: flex;
+                    align-items: flex-start;
+                    font-size:16px;
+                    font-weight:600;
+                    width:60%;
+                    img{
+                        width:36px;
+                        margin-right:10px;
+                        height:36px;
+                    }
+                }
+                p{
+                    color:$white;
+                    margin-top:10px;
+                    font-size:16px;
+                    width:80%;
+                    font-weight:400;
+                }
+            }
+        }
+    }
+}
+
+.coaches-list{
+    margin-top:70px;
+    .coaches-list-flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content:flex-end;
+        position: relative;
+        .coaches-list-header{
+            width:49%;
+            position:absolute;
+            left:0;
+            h1{
+                @extend .h1;
+            }
+            p{
+                @extend .p;
+                margin-top:20px;
+            }
+        }
+        .coaches-list-content{
+            width:49%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            .coaches-list-item{
+                margin-bottom:50px;
+                border-bottom:2px solid $primary;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                .coachest-list-number{
+                    p{
+                        font-size:48px;
+                        color:$primary;
+                        font-weight:600;
+                        margin-top:0px;
+                    }
+                }
+                .coaches-list-text{
+                    margin-left:20px;
+                    h1{
+                        margin:0px;
+                        font-size:18px;
+                        font-weight:400;
+                        color:#797979;
+                        padding:5px 10px;
+                        border-radius:100px;
+                        background-color:#D9D9D9;
+                        display: inline-block;
+                        margin-top:10px;
+                    }
+                    p{
+                        @extend .p;
+                        margin-top:20px;
+                        line-height: 24px;
+                        margin-bottom:32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.coaches-grey-section{
+    margin-top:70px;
+    .coacheas-grey-content{
+        background:linear-gradient(205deg, #C6C9C9,#E6E7E7); 
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        .coaches-grey-text{
+            width:90%;
+            margin:50px auto;
+            h1{
+                @extend .h1;
+                width:70%;
+            }
+            p{
+                @extend .p;
+                width:60%;
+                margin-top: 30px;
+                margin-bottom:50px;
+            }
+            a{
+                background: $gradient;
+                padding:15px 45px;
+                border-radius:10px;
+                color:$white;
+                font-size:18px;
+                font-weight:500;
+            }
+        
+        }
+        .coaches-grey-image{
+            position: absolute;
+            bottom: 0px;
+            right:0px;
+            width:500px;
+        }
+    }
+}
+
+.coaches-person-slider-block{
+    margin-top:70px;
+    .coaches-person-header{
+        width:100%;
+        h1{
+            @extend .h1;
+            width:70%;
+        }
+    }
+    .coaches-person-slider{
+        margin-top:50px;
+        width:calc(100% - 10%);
+        margin-left:15%;
+        position: relative;
+        .slick-list{
+            overflow: hidden;
+            .slick-track{
+                display: flex;
+                .coaches-person-slider-item{
+                    margin:0px 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    img{
+                        width:300px;
+                        height:300px;
+                        border-radius:20px;
+                        object-fit: cover;
+                    }
+                    h1{
+                        margin-top:20px;
+                        font-size:28px;
+                        letter-spacing: -2%;
+                        font-weight:600;
+                        margin-bottom:0px;
+                    }
+                    ul{
+                        margin-top:30px;
+                        li{
+                            list-style:disc;
+                            margin-bottom:10px;
+                            font-size:18px;
+                            font-weight:400;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-arrow{
+            position: absolute;
+            z-index: 100;
+            top:-100px;
+            font-size:0px;
+            border:none;
+            background-color:transparent;
+            background:url('../../images/coaches/str.svg');
+            width:50px;
+            height:50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            &.slick-next{
+                right:10%;
+            }
+            &.slick-prev{
+                right:14%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.coaches-services{
+    margin-top:70px;
+    .coaches-services-header{
+        width:70%;
+        h1{
+            @extend .h2;
+        }
+    }
+    .coaches-services-flex{
+        @include flex-between;
+        width:100%;
+        .coaches-services-item{
+            width:32%;
+            background-color:#F6F6F6;
+            border:1px solid #E1E1E1;
+            border-radius:20px;
+            h1{
+                background:$gradient;
+                padding:5px 10px;
+                border-radius: 5px;
+                margin-left:20px;
+                margin-top:20px;
+                color:$white;
+                font-size:16px;
+                font-weight:500;
+                display: inline-block;
+            }
+            p{
+                @extend .p;
+                margin-left:20px;
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+        }
+    }
+}
+
+.coaches-keys{
+    margin-top:70px;
+    .coaches-keys-header{
+        width:100%;
+        position: relative;
+        h1{
+            @extend .h1;
+            width:60%;
+        }
+    }
+    .coaches-keys-flex{
+        @include flex-between;
+        width:100%;
+        .coaches-key-flex-item{
+            width:32%;
+            border-radius:20px;
+            background-color:#F6F6F6;
+            overflow:hidden;
+            .coaches-key-background{
+                width:100%;
+                height:280px;
+                position: relative;
+                img{
+                    width:100%;
+                    height:100%;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    z-index: 1;
+                }
+                h1{
+                    position: absolute;
+                    bottom:10px;
+                    left:20px;
+                    width:80%;
+                    color:$white;
+                    font-size:24px;
+                    font-weight:600;
+                    z-index: 2;
+                }
+            }
+            .coaches-key-content{
+                height:260px;
+                p{
+                    margin-left:20px;
+                    margin-top:50px;
+                    width:90%;
+                    @extend .p;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+//coaches page finish
+
+//coach page start
+
+.main-coach{
+    background:linear-gradient(180deg, #D6D6D6,#ffffff); 
+    width:100vw;
+    height:100vh;
+    max-height:720px;
+    .main-coach-left{
+        width:60%;
+    }
+    .main-coach-flex{
+        @include flex-between;
+        align-items: flex-end;
+        width:100%;
+        height:100%;
+        .main-coach-back{
+            a{
+                color:#666666;
+                font-weight:400;
+                font-size:16px;
+                text-decoration: underline;
+            }
+        }
+        .main-coach-content{
+            margin-top:16px;
+            .main-coach-content-header{
+                width:100%;
+                position: relative;
+                h1{
+                    @extend .h2;
+                    margin:0;
+                }
+                p{
+                    margin-top:10px;
+                    font-size:15px;
+                    color:#666666;
+                }
+            }
+            .main-coach-content-flex{
+                @include flex-between;
+                width:100%;
+                .main-coach-content-item{
+                    width:19%;
+                    background:$white;
+                    border-radius:10px;
+                    h2{
+                        @extend .p;
+                        color:#666666;
+                        margin-left:10px;
+                        margin-top:5px;
+                        margin-bottom:0;
+                        font-weight:400;
+                    }
+                    p{
+                        @extend .p;
+                        color:$black;
+                        font-weight:600;
+                        margin-top:0px;
+                        margin-left:10px;
+                        margin-bottom:5px;
+                    }
+
+                    &:nth-last-child(1){
+                        background:$gradient;
+                        h2{
+                            color:$white;
+                        }
+                        p{
+                            color:$white;
+                        }
+                     }
+                }
+            }
+            .main-coach-content-list{
+                margin-top:30px;
+                p{
+                    @extend .p;
+                    color:#666666;
+                    font-weight: 600;
+                }
+                ul{
+                    margin-top:20px;
+                    li{
+                        margin-top:5px;
+                        @extend .p;
+                        font-weight: 400;
+                        list-style: disc
+                    }
+                }
+            }
+            .main-coach-content-buttons{
+                @include flex-between;
+                justify-content: flex-start;
+                margin-top:70px;
+                .gradient_button{
+                    width:220px;
+                    a{
+                        @include gradient-button;
+                    }
+                }
+                .main-coach-content-buttons-text{
+                    margin-left:10px;
+                    width:70%;
+                    p{
+                        font-size:14px;
+                        color:#666666;
+                        font-weight:400;
+                    }
+                }
+                
+            }
+        }
+    }
+   
+}
+
+.about-coach-section{
+    margin-top:70px;
+    .about-coach-section-header{
+        width:100%;
+        position: relative;
+        h1{
+            width:80%;
+            @extend .h1;
+        }
+    }
+    .about-coach-section-flex{
+        width:100%;
+        margin-top:30px;
+        background:linear-gradient(0deg, #d6d6d6, #ffffff);
+        border-radius:20px;
+        border:1px solid #E6E6E6;
+        @include flex-between;
+        .about-coach-section-item{
+            width:33%;
+            height:260px;
+            border-radius:20px;
+            background:linear-gradient(0deg, #878787, #F1F1F1);
+            margin:10px;
+            h1{
+                @extend .h1;
+                color:$primary;
+                margin-left:25px;
+                margin-top:30px;
+                margin-bottom:0;
+            }
+            p{
+                @extend .p;
+                font-weight:400;
+                margin-top:30px;
+                margin-left:25px;
+            }
+        }
+    }
+}
+
+.about-coach-list{
+    margin-top:100px;
+    .about-coach-flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        position:relative;
+        width:100%;
+        .about-coach-header{
+            position: absolute;
+            top:0;
+            left:0;
+            width:45%;
+            h1{
+                @extend .h1
+            }
+        }
+        .about-coach-content{
+            width:52%;
+            position: relative;
+            .about-coach-content-item{
+                padding-bottom:30px;
+                width:100%;
+                border-bottom:2px solid $primary;
+                margin-bottom: 30px;
+                h1{
+                    font-size:28px;
+                    margin:0;
+                    color:$primary;
+                    font-weight:600;
+
+                }
+                p{
+                    @extend .p;
+                    margin-top:20px;
+                }
+                &:nth-last-child(1){
+                    border-bottom:0;
+                }
+            }
+        }
+    }
+}
+
+.about-coach-plashka-section{
+    margin-top:100px;
+    .about-coach-plashka{
+        background-color:#EEEEEE;
+        border-radius: 20px;
+        overflow:hidden;
+        width:100%;
+        position: relative;
+        .coach-plahska-background{
+            position: absolute;
+            bottom:0;
+            right:0;
+            width:40%;
+            z-index: 1;
+        }
+        .about-coach-plashka-flex{
+            @include flex-between;
+            margin:20px 50px;
+            position: relative;
+            z-index: 2;
+            .about-coach-plashka-text{
+                width:48%;
+                h1{
+                    @extend .h1;
+                    margin:0;
+
+                }
+                p{
+                    margin-top:30px;
+                    @extend .p;
+                    font-weight:400;
+                }
+            }
+            .about-coach-plashka-image{
+                width:40%;
+                height:520px;
+                border-radius:20px;
+                overflow:hidden;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.coach-adv{
+    margin-top:100px;
+    .coach-adv-flex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .coach-adv-ava{
+            width:49%;
+            height:510px;
+            position:relative;
+            .coach-adv-ava-image{
+                width:100%;
+                height:100%;
+                position: absolute;
+                border-radius:20px;
+                overflow: hidden;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+            .coach-adv-ava-opacity{
+                position: absolute;
+                width:100%;
+                height:40%;
+                z-index: 2;
+            }
+            .coach-adv-ava-content{
+                position: absolute;
+                bottom:30px;
+                left:30px;
+                width:90%;
+                z-index: 3;
+                h1{
+                    @extend .h2;
+                    color:$white;
+
+                }
+                .coach-adv-ava-content-buttons{
+                    @include flex-between;
+                    justify-content: flex-start;
+                    
+                    .gradient_button{
+                        width:200px;
+                        a{
+                            @include gradient-button;
+                            
+                        }
+                    }
+                    .video-button{
+                        margin-left:10px;
+                        width:250px;
+                        a{
+                            @include gradient-button;
+                            background:linear-gradient(0deg,#6E6E6E, #DFDFDF);
+                            p{
+                                margin:8px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .coach-adv-text{
+            width:49%;
+            .coach-adv-text-item{
+                padding-bottom:30px;
+                margin-bottom:30px;
+                border-bottom:2px solid $primary;
+                width:100%;
+                h1{
+                    color:$primary;
+                    margin:0;
+                    font-weight:600;
+                }
+                p{
+                    margin-top: 20px;
+                    @extend .p;
+                }
+                &:nth-last-child(1){
+                    border-bottom:none
+                }
+            }
+
+        }
+    }
+}
+
+
+//coach page finish
+
+
+//contact start
+
+.contact-header{
+    margin-top:150px;
+    h1{ 
+        @extend .h2;
+    }   
+    p{
+        color:#666666;
+        font-size:15px;
+        a{
+            color:#666666;
+        }
+    }
+}
+.contact-flex{
+    @include flex-between;
+    flex-wrap: wrap;
+    margin-top:30px;
+    .contact-flex-item{
+        width:calc(49% - 140px);
+        margin-bottom:20px;
+        background:#EEEEEE;
+        border-radius:20px;
+        height:510px;
+        padding:50px 70px;
+        position:relative;
+        .contact-background{
+            position: absolute;
+            width:50%;
+            bottom:0;
+            right:0;
+
+        }
+        h1{
+            @extend .h1;
+        }
+        p{
+            @extend .p;
+        }
+        .contact-flex-item-button{
+            margin-top:50px;
+            a{
+                color:$white;
+                background:$gradient;
+                padding:15px 40px;
+                border-radius:10px;
+            }
+        }
+        .contact-flex-socials{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top:50px;
+            a{
+                width:50px;
+                height:50px;
+                margin-right:10px;
+                border-radius:50%;
+                background:$primary;
+                @include flex-center;
+                img{
+                    width:50%;
+                    height:50%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+//contact finish
+
+//testimonials start
+.testimonials-main{
+    margin-top:150px;
+    .testimonials-header{
+        width:100%;
+        position: relative;
+        h1{ 
+            @extend .h2;
+            width:60%;
+        }   
+        p{
+            color:#666666;
+            font-size:15px;
+            a{
+                color:#666666;
+            }
+        }
+    }
+    .testimonials-flex{
+        margin-top:50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .test-sidebar{
+            width:23%;
+            background-color:$white;
+            border:1px solid #E6E6E6;
+            border-radius:20px;
+            .test-sidebar-header{
+                margin:20px auto;
+                width:80%;
+                text-align: center;
+                h1{
+                    font-size:20px;
+                    line-height: 120%;
+                    font-weight:600;
+                    margin:0;
+                }
+            }
+            .test-siderbar-menu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width:95%;
+                margin:auto;
+                a{
+                    height:160px;
+                    position:relative;
+                    width:100%;
+                    border-radius:20px;
+                    overflow: hidden;
+                    margin-bottom:10px;
+                    img{
+                        position:absolute;
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                        z-index: 1;
+                    }
+                    p{
+                        position: absolute;
+                        bottom:20px;
+                        width:90%;
+                        left:5%;
+                        text-align: center;
+                        color:$white;
+                        @extend .p;
+                        z-index: 2;
+                        margin:0;
+
+                    }
+                }
+            }
+        }
+        .testimonials-items{
+            width:72%;
+            .testimonials-items-header{
+                h1{
+                    margin:0;
+                    font-size:30px;
+                }
+            }
+            .testimonials-items-flex{
+                @include flex-between;
+                flex-wrap: wrap;
+                margin-top:20px;
+                .testimonials-items-item{
+                    width:32%;
+                    margin-top:10px;
+                    height:560px;
+                    border-radius:20px;
+                    overflow:hidden;
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
+
+//testimonials finish
+
 @import "coaches.scss";
 //section5 finish
 @import "footer.scss";

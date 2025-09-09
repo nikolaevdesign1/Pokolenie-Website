@@ -33,6 +33,12 @@ $('.section-students-slider-slider').slick({
     slidesToShow:4,
 })
 
+$('.coaches-person-slider').slick({
+  speed: 600,
+  slidesToShow:5,
+  infinite:true,
+})
+
 
   //faq start
 
