@@ -39,6 +39,12 @@ $('.coaches-person-slider').slick({
   infinite:true,
 })
 
+$('.journal-materials-slider').slick({
+ 
+arrows: true,
+  slidesToShow:3,
+  
+})
 
   //faq start
 

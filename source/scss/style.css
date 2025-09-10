@@ -32,13 +32,13 @@ h1, h2, h3, h4, p, a, li, button, input, div {
   line-height: 55px;
 }
 
-.h2, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
+.h2, .journal-text-header h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1, .journal-footer .journal-footer-content h1, .journal-header h1, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
   font-size: 45px;
   color: #353232;
   line-height: 55px;
 }
 
-.p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
+.p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
   font-size: 18px;
   line-height: 26px;
 }
@@ -2922,6 +2922,685 @@ header .desktop_header {
      object-fit: cover;
 }
 
+.journal-header {
+  padding-top: 150px;
+  width: 100%;
+  position: relative;
+}
+.journal-header p {
+  color: #666666;
+}
+.journal-header p a {
+  color: #666666;
+}
+
+.journal-section {
+  margin-top: 80px;
+}
+.journal-section .journal-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.journal-section .journal-flex .journal-sidebar {
+  width: 22%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.journal-section .journal-flex .journal-sidebar .journal-big-cat ul li {
+  margin-bottom: 20px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-start;
+  color: #353232;
+}
+.journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a img {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-header h1 {
+  color: #353232;
+  font-size: 24px;
+  margin: 0;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-list {
+  margin-top: 20px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-list ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-list ul li {
+  margin-bottom: 20px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-list ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+}
+.journal-section .journal-flex .journal-sidebar .journal-small-cat .journal-small-cat-list ul li a img {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header h1 {
+  color: #353232;
+  font-size: 24px;
+  margin: 0;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-content {
+  margin-top: 30px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-content img {
+  width: 100%;
+  height: 230px;
+  border-radius: 20px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 50px;
+}
+.journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-content a {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 18px 50px;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  border-radius: 100px;
+}
+.journal-section .journal-flex .journal-content {
+  width: 75%;
+}
+.journal-section .journal-flex .journal-content .journal-news-container {
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  width: 100%;
+  border-radius: 20px;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-header {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 24px;
+  color: #353232;
+  font-weight: 600;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-header h1 img {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: calc(100% - 80px);
+  margin: auto;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-list .journal-news-item {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-list .journal-news-item a {
+  color: #353232;
+  font-size: 18px;
+  line-height: 30px;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-list .journal-news-item a span {
+  color: #808080;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-button-more {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.journal-section .journal-flex .journal-content .journal-news-container .journal-news-button-more p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.journal-section .journal-flex .journal-content .journal-cases {
+  margin-top: 50px;
+}
+.journal-section .journal-flex .journal-content .journal-cases .journal-cases-header {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.journal-section .journal-flex .journal-content .journal-cases .journal-cases-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #353232;
+}
+.journal-section .journal-flex .journal-content .journal-cases .journal-cases-header a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: underline;
+  color: #353232;
+  font-weight: 400;
+  font-size: 16px;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka {
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-back {
+  position: absolute;
+  bottom: 0px;
+  right: -10%;
+  width: 120%;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex {
+  width: 90%;
+  position: relative;
+  z-index: 2;
+  height: 340px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text {
+  width: 49%;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text h1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #353232;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text a {
+  font-size: 18px;
+  color: #FF4E00;
+  padding: 15px 60px;
+  border: 1px solid #FF4E00;
+  border-radius: 10px;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-image {
+  width: 40%;
+}
+.journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-image img {
+  height: 260px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.journal-news-line {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.journal-news-line .journal-news-line-item {
+  width: 48%;
+  height: 470px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.journal-news-line .journal-news-line-item img {
+  width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-news-line .journal-news-line-item p {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.journal-news-line .journal-news-line-item h1 {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.journal-news-line .journal-news-line-item a {
+  margin-left: 20px;
+  color: #FF4E00;
+  padding: 15px 60px;
+  border: 1px solid #FF4E00;
+  border-radius: 10px;
+}
+
+.journal-materials {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+}
+.journal-materials .journal-materials-header {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.journal-materials .journal-materials-header h1 {
+  font-size: 24px;
+  color: #353232;
+  font-weight: 600;
+}
+.journal-materials .journal-materials-slider {
+  width: calc(100% - 60px);
+  margin-top: 25px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.journal-materials .journal-materials-slider .slick-arrow {
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: none;
+  background: url("../../images/journal/str.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.journal-materials .journal-materials-slider .slick-arrow.slick-next {
+  right: -2%;
+}
+.journal-materials .journal-materials-slider .slick-arrow.slick-prev {
+  left: -2%;
+  transform: rotate(180deg);
+}
+.journal-materials .journal-materials-slider .slick-list {
+  overflow: hidden;
+}
+.journal-materials .journal-materials-slider .slick-list .slick-track {
+  display: flex;
+}
+.journal-materials .journal-materials-slider .slick-list .slick-track .journal-materials-slider-item {
+  margin: 0px 10px;
+}
+.journal-materials .journal-materials-slider .slick-list .slick-track .journal-materials-slider-item img {
+  height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.journal-materials .journal-materials-slider .slick-list .slick-track .journal-materials-slider-item h1 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.journal-universials {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.journal-universials .journal-universial-item {
+  width: 49%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.journal-universials .journal-universial-item .journal-universial-item-image {
+  width: 100%;
+  height: 210px;
+}
+.journal-universials .journal-universial-item .journal-universial-item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-universials .journal-universial-item .journal-universal-item-tags {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.journal-universials .journal-universial-item .journal-universal-item-tags h1 {
+  color: #ffffff;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  padding: 8px 20px;
+  border-radius: 9px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.journal-universials .journal-universial-item .journal-universal-item-tags p {
+  margin-left: 20px;
+  color: #7C7C7C;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.journal-universials .journal-universial-item .journal-universal-item-content {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.journal-universials .journal-universial-item .journal-universal-item-content h1 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.journal-universials .journal-universial-item .journal-universal-item-content p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.journal-footer {
+  background-color: #E6E7E7;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 535px;
+  margin-top: 50px;
+}
+.journal-footer .journal-footer-background {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 30%;
+  z-index: 1;
+}
+.journal-footer .journal-footer-background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-footer .journal-footer-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  z-index: 2;
+}
+.journal-footer .journal-footer-content {
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+}
+.journal-footer .journal-footer-content h1 {
+  margin: 0;
+}
+.journal-footer .journal-footer-content p {
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.journal-footer .journal-footer-content .journal-footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.journal-footer .journal-footer-content .journal-footer-flex a {
+  color: #ffffff;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  padding: 15px 60px;
+  border-radius: 10px;
+}
+.journal-footer .journal-footer-content .journal-footer-flex img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+.journal-content-main-section {
+  border-radius: 20px;
+  background-color: #EEEEEE;
+  overflow: hidden;
+  height: 336px;
+  width: 100%;
+  position: relative;
+}
+.journal-content-main-section .journal-content-main-section-back {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  z-index: 1;
+}
+.journal-content-main-section .journal-content-main-section-back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-content-main-section .journal-content-main-section-flex {
+  width: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content {
+  width: 48%;
+}
+.journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1 {
+  margin: 0;
+}
+.journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p {
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 80%;
+}
+.journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-image {
+  width: 50%;
+  background-color: #C6C6C6;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 90%;
+}
+.journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.journal-cases-section {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.journal-cases-section .journal-cases-section-item {
+  width: 49%;
+  height: 470px;
+  border-radius: 20px;
+  border: 1px solid #E6E6E6;
+  margin-top: 20px;
+}
+.journal-cases-section .journal-cases-section-item img {
+  width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-cases-section .journal-cases-section-item h1 {
+  font-weight: 400;
+  color: #353232;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+}
+.journal-cases-section .journal-cases-section-item h2 {
+  font-weight: 600;
+  color: #353232;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+  margin-bottom: 50px;
+}
+.journal-cases-section .journal-cases-section-item p {
+  color: #FF4E00;
+  margin-left: 5%;
+  border: 1px solid #FF4E00;
+  padding: 15px 50px;
+  border-radius: 15px;
+  display: inline;
+}
+
+.journal-text-navigations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+.journal-text-navigations p {
+  font-weight: 600;
+  margin: 0;
+}
+.journal-text-navigations p:nth-child(2) {
+  margin-left: 20px;
+  font-weight: 400;
+  color: #6C6C6C;
+}
+
+.journal-text-header {
+  margin-top: 10px;
+}
+.journal-text-header h1 {
+  margin: 0;
+}
+
+.journal-text-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+.journal-text-links p {
+  color: #848484;
+  font-size: 21px;
+  font-weight: 400;
+}
+.journal-text-links a {
+  text-decoration: underline;
+  font-size: 21px;
+  font-weight: 400;
+  color: #848484;
+  margin-left: 50px;
+}
+
+.journal-text-content {
+  width: 100%;
+}
+.journal-text-content .journal-text-content-image {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.journal-text-content .journal-text-content-image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal-text-content h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #353232;
+}
+.journal-text-content p {
+  line-height: 26px;
+}
+.journal-text-content .journal-text-content-quote {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #E6E6E6;
+  padding: 30px;
+  width: calc(100% - 60px);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.journal-text-content .journal-text-content-quote a {
+  color: #FF4E00;
+}
+.journal-text-content img {
+  max-width: 30%;
+}
+
 .section-coaches {
   padding-top: 70px;
   background-color: #F6F6F6;
@@ -3157,7 +3836,7 @@ header .desktop_header {
 }
 
 footer {
-  margin-top: 100px;
+  padding-top: 100px;
   width: 100%;
   background-color: #F6F6F6;
   display: block;
