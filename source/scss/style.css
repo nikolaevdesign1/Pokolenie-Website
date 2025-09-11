@@ -26,19 +26,19 @@ h1, h2, h3, h4, p, a, li, button, input, div {
   font-family: "Golos";
 }
 
-.h1, .section-coaches .coahes_header h1, .contact-flex .contact-flex-item h1, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text h1, .about-coach-list .about-coach-flex .about-coach-header h1, .about-coach-section .about-coach-section-flex .about-coach-section-item h1, .about-coach-section .about-coach-section-header h1, .coaches-keys .coaches-keys-header h1, .coaches-person-slider-block .coaches-person-header h1, .coaches-grey-section .coacheas-grey-content .coaches-grey-text h1, .coaches-list .coaches-list-flex .coaches-list-header h1, .coaches-adv-section .coaches-adv-header h1, .students-news .students-news-header h1, .students-text-right .students-text-right-flex .student-text-right-left h1, .students-adv .students-adv-header h1, .student-icons-section .students-icons-section-content .students-icons-section-content-header h1, .student-about .student-about-content .student-about-item .student-about-item-text h1, .student-about .student-about-header h1, .section-footer-qr .section-footer-qr-plashka .plashka-content h1, .section-magazine .section-magazine-header h1, .section-news .section-news-header h1, .section-students-slider .section-students-slider-header h1, .students-section .students-section-header h1, .section8 .section8-content .section8-text h1, .section5 .section5-header h1, .section4-header h1, .section3 .section3-content .section3-header h1, .section2 .section_header h1 {
+.h1, .section-coaches .coahes_header h1, .personal-header h1, .contact-flex .contact-flex-item h1, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text h1, .about-coach-list .about-coach-flex .about-coach-header h1, .about-coach-section .about-coach-section-flex .about-coach-section-item h1, .about-coach-section .about-coach-section-header h1, .coaches-keys .coaches-keys-header h1, .coaches-person-slider-block .coaches-person-header h1, .coaches-grey-section .coacheas-grey-content .coaches-grey-text h1, .coaches-list .coaches-list-flex .coaches-list-header h1, .coaches-adv-section .coaches-adv-header h1, .students-news .students-news-header h1, .students-text-right .students-text-right-flex .student-text-right-left h1, .students-adv .students-adv-header h1, .student-icons-section .students-icons-section-content .students-icons-section-content-header h1, .student-about .student-about-content .student-about-item .student-about-item-text h1, .student-about .student-about-header h1, .section-footer-qr .section-footer-qr-plashka .plashka-content h1, .section-magazine .section-magazine-header h1, .section-news .section-news-header h1, .section-students-slider .section-students-slider-header h1, .students-section .students-section-header h1, .section8 .section8-content .section8-text h1, .section5 .section5-header h1, .section4-header h1, .section3 .section3-content .section3-header h1, .section2 .section_header h1 {
   font-size: 48px;
   color: #353232;
   line-height: 55px;
 }
 
-.h2, .journal-text-header h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1, .journal-footer .journal-footer-content h1, .journal-header h1, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
+.h2, .popup-content-thanks h1, .popup-registration .popup-content .popup-content-registrations form h1, .popup-years .popup-content h1, .journal-text-header h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1, .journal-footer .journal-footer-content h1, .journal-header h1, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
   font-size: 45px;
   color: #353232;
   line-height: 55px;
 }
 
-.p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
+.p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .brief-content-steps h1, .personal-flex .personal-admin .personal-admin-container-start p, .personal-flex .personal-sidebar .personal-sidebar-container ul li a, .personal-flex .personal-sidebar .personal-sidebar-container h1, .personal-main-plashka .personal-main-plashka-content p, .forgot-pass, .popup-registration .popup-content .popup-content-background p, .popup-registration .popup-content .popup-content-background h1, .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header .journal-header-absolute, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
   font-size: 18px;
   line-height: 26px;
 }
@@ -198,6 +198,7 @@ header .desktop_header {
   top: 30px;
   left: -20px;
   padding: 10px 20px;
+  width: 200px;
 }
 .header_menu ul li.sub-menu ul li {
   margin: 10px 0px;
@@ -2933,6 +2934,14 @@ header .desktop_header {
 .journal-header p a {
   color: #666666;
 }
+.journal-header .journal-header-absolute {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 50%;
+  line-height: 26px;
+  text-align: right;
+}
 
 .journal-section {
   margin-top: 80px;
@@ -3599,6 +3608,909 @@ header .desktop_header {
 }
 .journal-text-content img {
   max-width: 30%;
+}
+
+.journal-glo-filters {
+  margin-top: 60px;
+  width: 100%;
+}
+.journal-glo-filters .journal-glo-filters-search {
+  width: 100%;
+}
+.journal-glo-filters .journal-glo-filters-search form {
+  width: 100%;
+  position: relative;
+}
+.journal-glo-filters .journal-glo-filters-search form input {
+  width: calc(100% - 50px);
+  border: none;
+  border-bottom: 1px solid #7C7C7C;
+  font-size: 18px;
+  color: #353232;
+  padding-left: 50px;
+  background: none;
+  padding-bottom: 10px;
+}
+.journal-glo-filters .journal-glo-filters-search form:before {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+  content: "";
+  background: url("../../images/journal/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.journal-glo-filters .journal-glo-filters-tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.journal-glo-filters .journal-glo-filters-tags p {
+  font-size: 20px;
+  font-weight: 900;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #353232;
+  border-radius: 100%;
+  margin: 0px;
+  cursor: pointer;
+}
+.journal-glo-filters .journal-glo-filters-tags p:nth-child(1) {
+  width: 70px;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+
+.journal-glo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.journal-glo-flex .journal-glo-flex-item {
+  width: 25%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.journal-glo-flex .journal-glo-flex-item h1 {
+  color: #353232;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
+.journal-glo-flex .journal-glo-flex-item a {
+  margin: 20px 0px;
+  color: #353232;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.popup-years {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.popup-years.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-years .popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.popup-years .popup-content {
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popup-years .popup-content h1 {
+  margin: 60px 0;
+}
+.popup-years .popup-content .popup-content-buttons {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.popup-years .popup-content .popup-content-buttons p:nth-child(1) {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 15px 82px;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  margin: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.popup-years .popup-content .popup-content-buttons p:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #585A61, #35373F);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 15px 82px;
+  border-radius: 10px;
+}
+
+.popup-registration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.popup-registration.active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-registration .popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.popup-registration .popup-content {
+  width: 1160px;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup-registration .popup-content .popup-content-registrations {
+  width: 60%;
+}
+.popup-registration .popup-content .popup-content-registrations form {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.popup-registration .popup-content .popup-content-registrations form h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.popup-registration .popup-content .popup-content-registrations form h2 {
+  color: #FF4E00;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.popup-registration .popup-content .popup-content-registrations form input {
+  margin: 10px 0px;
+  width: 80%;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  background: #F7F7F7;
+}
+.popup-registration .popup-content .popup-content-registrations form label {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0px;
+}
+.popup-registration .popup-content .popup-content-registrations form label input {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  margin-right: 10px;
+}
+.popup-registration .popup-content .popup-content-registrations form label p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #353232;
+}
+.popup-registration .popup-content .popup-content-registrations form label p a {
+  text-decoration: underline;
+  color: #FF4E00;
+}
+.popup-registration .popup-content .popup-content-registrations form button {
+  cursor: pointer;
+  width: calc(80% + 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  border-radius: 10px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+}
+.popup-registration .popup-content .popup-content-background {
+  width: 40%;
+  height: 100%;
+  background: url("../../images/sign-back.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popup-registration .popup-content .popup-content-background img {
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.popup-registration .popup-content .popup-content-background h1 {
+  color: #ffffff;
+  margin: 20px 0px;
+  font-weight: 500;
+}
+.popup-registration .popup-content .popup-content-background p {
+  margin: 0;
+  padding: 20px 60px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sign-in .popup-content {
+  height: 50%;
+}
+
+.forgot-pass {
+  text-decoration: underline;
+  color: #FF4E00;
+  cursor: pointer;
+}
+
+.popup-content-thanks {
+  width: 90%;
+  margin: auto;
+}
+.popup-content-thanks h1 {
+  margin: 0;
+}
+.popup-content-thanks p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #353232;
+  line-height: 130%;
+}
+.popup-content-thanks p a {
+  color: #FF4E00;
+  text-decoration: underline;
+}
+
+.personal-header {
+  width: 100%;
+  margin-top: 150px;
+  position: relative;
+}
+.personal-header h1 {
+  color: #353232;
+  margin: 0;
+}
+
+.personal-main-plashka {
+  margin-top: 60px;
+  background: linear-gradient(180deg, #f5f5f5, #e6e6e6);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  height: 475px;
+  width: 100%;
+}
+.personal-main-plashka .personal-main-plashka-background {
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  bottom: 0;
+  right: 0;
+}
+.personal-main-plashka .personal-main-plashka-background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.personal-main-plashka .personal-main-plashka-content {
+  width: 40%;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.personal-main-plashka .personal-main-plashka-content h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #353232;
+  line-height: 50px;
+}
+.personal-main-plashka .personal-main-plashka-content p {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.personal-main-plashka .personal-main-plashka-content a {
+  padding: 15px 35px;
+  color: #ffffff;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  border-radius: 10px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.personal-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 50px;
+}
+.personal-flex .personal-sidebar {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
+}
+.personal-flex .personal-sidebar .personal-sidebar-container {
+  width: calc(100% - 60px);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container h1 {
+  margin: 0;
+  color: #797979;
+  font-weight: 400;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container ul {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container ul li {
+  margin: 10px 0px;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0px;
+  color: #353232;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container ul li a img {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container .pesronal-sidebar-button {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FF4E00;
+  border-radius: 10px;
+}
+.personal-flex .personal-sidebar .personal-sidebar-container .pesronal-sidebar-button a {
+  width: 100%;
+  height: 100%;
+  color: #FF4E00;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-flex .personal-admin {
+  width: 68%;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.personal-flex .personal-admin .personal-admin-container-start {
+  width: 100%;
+  height: 100%;
+}
+.personal-flex .personal-admin .personal-admin-container-start h1 {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 40px;
+  color: #353232;
+}
+.personal-flex .personal-admin .personal-admin-container-start p {
+  margin: 0;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  width: 80%;
+}
+.personal-flex .personal-admin .personal-admin-container-start a {
+  margin-left: 50px;
+  padding: 15px 10px;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+  border-radius: 10px;
+  color: #ffffff;
+}
+.personal-flex .personal-admin .personal-admin-container-start img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.brief-container {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.brief-container .brief-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(180deg, #F3F3F3, #FFCCB6);
+  display: flex;
+  align-items: center;
+}
+.brief-container .brief-header h1 {
+  margin: 0;
+  font-size: 40px;
+  margin-left: 50px;
+  color: #353232;
+}
+.brief-container .brief-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  border-top: 1px solid #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.brief-container .brief-buttons p {
+  margin-left: 50px;
+}
+.brief-container .brief-buttons p:nth-child(1) {
+  font-size: 18px;
+  color: #353232;
+  font-weight: 600;
+  padding: 15px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #D9D9D9;
+}
+.brief-container .brief-buttons p:nth-child(2) {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(205deg, #ff7a40, #ff4e00);
+}
+
+.brief-content {
+  width: 100%;
+  height: calc(100% - 90px - 80px);
+  top: 90px;
+  overflow-y: scroll;
+  position: absolute;
+}
+
+.brief-content-steps {
+  width: 90%;
+  margin: auto;
+}
+.brief-content-steps h1 {
+  margin-top: 50px;
+  color: #353232;
+  font-weight: 500;
+}
+.brief-content-steps .brief-content-coaches-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item {
+  width: 100%;
+  background-color: #E7E7E7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-image {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 25%;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item input {
+  display: none;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content h2 {
+  font-weight: 600;
+  color: #353232;
+  font-size: 20px;
+  margin: 0px;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content h3 {
+  font-weight: 400;
+  color: #353232;
+  font-size: 16px;
+  margin: 0px;
+  margin-top: 15px;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content h3 span {
+  font-weight: 600;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content .brief-content-coaches-list-item-content-links {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content .brief-content-coaches-list-item-content-links p {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content .brief-content-coaches-list-item-content-links p:nth-child(1) {
+  color: #FF4E00;
+  text-decoration: underline;
+}
+.brief-content-steps .brief-content-coaches-list .brief-content-coaches-list-item .brief-content-coaches-list-item-content .brief-content-coaches-list-item-content-links p:nth-child(2) {
+  color: #939393;
+  text-decoration: underline;
+}
+
+.step1 {
+  display: none;
+}
+
+.step2 {
+  display: none;
+}
+.step2 p {
+  font-size: 16px;
+  color: #959595;
+}
+.step2 input {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 50px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.step3 {
+  display: none;
+}
+.step3 select {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 50px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.step4 {
+  display: none;
+}
+.step4 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step5 {
+  display: none;
+}
+.step5 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step6 {
+  display: none;
+}
+.step6 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step7 {
+  display: none;
+}
+.step7 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step8 {
+  display: none;
+}
+.step8 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step9 {
+  display: none;
+}
+.step9 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step10 {
+  display: none;
+}
+.step10 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step11 {
+  display: none;
+}
+.step11 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step12 {
+  display: none;
+}
+.step12 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step13 {
+  display: none;
+}
+.step13 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step14 {
+  display: none;
+}
+.step14 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step15 {
+  display: none;
+}
+.step15 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.step16 {
+  display: block;
+}
+.step16 textarea {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 320px;
+  background: #DFDFDF;
+  color: #353232;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 
 .section-coaches {
