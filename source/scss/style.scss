@@ -37,19 +37,61 @@ $black: #353232;
 h1,h2,h3,h4,p,a,li,button,input,div{
     font-family: 'Golos';
 }
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "laptop": 1024px,
+  "desktop": 1280px
+);
+
+@mixin respond-to($device) {
+    @if map-has-key($breakpoints, $device) {
+      @media (max-width: map-get($breakpoints, $device)) {
+        @content;
+      }
+    }
+  }
+
 .h1{
     font-size:48px;
     color:$black;
     line-height: 55px;
+    @include respond-to("tablet") {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    
+      @include respond-to("mobile") {
+        font-size: 24px;
+        line-height: 30px;
+      }
 }
 .h2{
     font-size:45px;
     color:$black;
     line-height: 55px;
+    @include respond-to("tablet") {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    
+      @include respond-to("mobile") {
+        font-size: 24px;
+        line-height: 30px;
+      }
 }
 .p{
     font-size:18px;
     line-height: 26px;
+    @include respond-to("tablet") {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    
+      @include respond-to("mobile") {
+        font-size: 12px;
+        line-height: 18px;
+      }
 }
 //fonts end
 
@@ -83,11 +125,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+      @include respond-to("mobile") {
+        flex-direction: column;
+      }
 }
 @mixin flex-between{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond-to("mobile") {
+       flex-direction: column;
+      }
 }
 @mixin button-faces{
     background-color:$white;
@@ -99,6 +147,9 @@ body{
     color:$black;
     font-size:16px;
     font-weight:500;
+    @include respond-to("mobile") {
+        font-size:14px;
+    }
 
 }
 
@@ -114,8 +165,15 @@ body{
     font-weight:500;
     display: flex;
     align-items: center;
+    @include respond-to("mobile") {
+        font-size:14px;
+    }
     p{
         padding-left:10%;
+        @include respond-to("mobile"){
+            margin-top:12px;
+            margin-bottom:12px;
+        }
     }
     .gradient_button_icon{
         position:absolute;
@@ -135,6 +193,9 @@ body{
     width:95%;
     height:100%;
     max-width:1280px;
+    @include respond-to("mobile") {
+        width:calc(100% - 24px);
+      }
 }
 
 /* header */
@@ -150,6 +211,9 @@ body{
     position:relative;
     max-height:1000px;
     overflow:hidden;
+    @include respond-to("mobile"){
+        height:auto;
+    }
     .section1_background{
         width:150%;
         height:140%;
@@ -168,6 +232,9 @@ body{
     border-radius:40px;
     overflow:hidden;
     height:calc(100vh - 150px);
+    @include respond-to("mobile"){
+        margin-top:80px;
+    }
     .section1_image{
         position:absolute;
         top:0;
@@ -175,6 +242,11 @@ body{
         width:100%;
         height:100%;
         z-index:1;
+        @include respond-to("mobile"){
+            //height:fit-content;
+            //bottom:0;
+            //top:auto
+        }
         img{
             width:100%;
             height:100%;
@@ -188,6 +260,9 @@ body{
         margin-top:50px;
         position:relative;
         z-index:2;
+        @include respond-to("mobile"){
+            margin-top:30px;
+        }
         img{
             width:100%;
         }
@@ -200,17 +275,28 @@ body{
         z-index: 2;
         position: relative;
         @include flex-between;
+        @include respond-to("mobile"){
+            margin-top:0px;
+        }
         .section1_text{
             width:60%;
             p{
                 @extend .p;
                 font-weight: 400;
                 color:$black;
+              
+            }
+            @include respond-to("mobile"){
+                width:100%;
+                text-align: center;
             }
         }
     }
     .section1_buttons{
         width:30%;
+        @include respond-to("mobile"){
+            width:100%;
+        }
         .person_button{
             display: flex;
             align-items: flex-start;
@@ -218,6 +304,9 @@ body{
             width:100%;
             a{
                 @include button-faces;
+                @include respond-to("mobile"){
+                    flex-direction: row;
+                }
                 img{
                     width:40px;
                     height:40px;
@@ -241,6 +330,9 @@ body{
             margin-top:20px;
             width:100%;
             height:53px;
+            @include respond-to("mobile") {
+                margin-top:10px;
+            }
             a{
                 @include gradient-button;
             }
@@ -255,6 +347,9 @@ body{
 
 .section2{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;
+    }
     .section_header{
         width:80%;
         h1{
@@ -269,6 +364,10 @@ body{
         margin-left:calc((100% - 1280px)/2);
         width:calc(100% - (100% - 1280px) / 2);
         position:relative;
+        @include respond-to("mobile"){
+            margin-left:0px;
+            width:100%;
+        }
        // margin-left:calc(100% - ((100%-1280)/2));
         .slick-list{
             overflow:hidden;
@@ -280,6 +379,9 @@ body{
                     border-radius:20px;
                     overflow: hidden;
                     margin-right:20px;
+                    @include respond-to("mobile"){
+                        margin-right:0;
+                    }
                     .section2_back_image{
                         position:absolute;
                         width:100%;
@@ -350,6 +452,9 @@ body{
 //section3 start
 .section3{
     margin-top:120px;
+    @include respond-to("mobile"){
+        margin-top:50px;
+    }
     .section3-content{
         background-color:#F6F6F6;
         border-radius:20px;
@@ -370,6 +475,10 @@ body{
             margin-left:50px;
             margin-top:70px;
             width:70%;
+            @include respond-to("mobile"){
+                margin-top:30px;
+                margin-left:30px;
+            }
             h1{
                 @extend .h1
             }
@@ -381,12 +490,22 @@ body{
             width:calc(100% - 100px);
             @include flex-between;
             align-items: flex-start;
+            @include respond-to("mobile"){
+                margin-top:0px;
+                margin-left:30px;
+                width:90%;
+                margin-bottom:30px;
+            }
             .section3_item{
                 width:23%;
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
+                @include respond-to("mobile"){
+                    width:90%;
+                    margin-top:10px;
+                }
                 img{
                     width:50px;
                     height:50px;
@@ -394,6 +513,10 @@ body{
                 p{
                     margin-top:20px;
                     @extend .p;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                        margin-bottom:0;
+                    }
                 }
 
             }
@@ -412,6 +535,11 @@ body{
     padding-bottom:120px;
     position:relative;
     overflow:hidden;
+    @include respond-to("mobile"){
+        margin-top:50px;
+        padding-top:40px;
+        padding-bottom:40px;
+    }
     .section4-background{
         position:absolute;
         bottom:-20%;
@@ -431,6 +559,10 @@ body{
         @extend .h1;
         color:$white;
         width:80%;
+        @include respond-to("mobile"){
+            width:100%;
+            margin-top:0;
+        }
     }
     .section4-button{
         position: absolute;
@@ -440,6 +572,9 @@ body{
             color:$white;
             font-size:16px;
             text-decoration: underline;
+            @include respond-to("mobile"){
+                display: none;
+            }
         }
     }
 }
@@ -456,6 +591,9 @@ body{
                 overflow:hidden;
                 height:240px;
                 margin:0px 10px;
+                @include respond-to("mobile"){
+                    height:140px;
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -477,6 +615,9 @@ body{
     background-color:#f6f6f6;
     padding-top:70px;
     padding-bottom:50px;
+    @include respond-to("mobile"){
+        padding-top:50px;
+    }
     .section5-header{
         h1{
             @extend .h1;
@@ -486,17 +627,32 @@ body{
     .section5-flex{
         @include flex-between;
         margin-top:50px;
+        @include respond-to("mobile"){
+            margin-top:20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         .section5-item{
             position:relative;
             background-color: $white;
             border-radius:25px 25px 100px 25px;
             width:24%;
+            @include respond-to("mobile"){
+                width:48%;
+                background: transparent;
+            }
             h1{
                 margin-top:25px;
                 margin-left:50px;
                 color:$primary;
                 font-size:64px;
                 font-weight:600;
+                @include respond-to("mobile"){
+                    font-size:48px;
+                    margin-left:0;
+                    margin-top:0;
+                    margin-bottom:0;
+                }
             }
             p{
                 @extend .p;
@@ -505,6 +661,13 @@ body{
                 width:60%;
                 margin-left:50px;
                 margin-bottom:50px;
+                @include respond-to("mobile"){
+                    width:90%;
+                    margin-top:10px;
+                    margin-left:0;
+                    margin-bottom:20px;
+                    font-size:14px;
+                }
             }
             .section5-item-icon{
                 position:absolute;
@@ -512,6 +675,9 @@ body{
                 height:65px;
                 right:30px;
                 top:-30px;
+                @include respond-to("mobile"){
+                    display: none;
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -524,10 +690,16 @@ body{
 
 .section6{
     margin-top:70px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .section6-flex{
         @include flex-between;
         .section6-text{
             width:55%;
+            @include respond-to("mobile") {
+                width:100%;
+            }
             h1{
                 @extend .h2;
                 color:$black;
@@ -549,11 +721,16 @@ body{
                     font-weight: 400;
                     flex-wrap: wrap;
                     display: flex;
+                    @include respond-to("mobile") {
+                        width:100%;
+                        margin-top:10px;
+                    }
                     img{
                         width:25px;
                         height:25px;
                         object-fit: cover;
                         margin-right:5px;
+                        
                     }
                 }
             }
@@ -563,6 +740,11 @@ body{
             border-radius:25px 25px 100px 25px;
             overflow:hidden;
             height:420px;
+            @include respond-to("mobile") {
+                width:100%;
+                height:300px;
+                margin-top:20px;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -574,18 +756,30 @@ body{
 
 .section7{
     margin-top:70px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .section7-flex{
         @include flex-between;
         width:100%;
         .section7-text{
             width:45%;
+            @include respond-to("mobile") {
+                width:100%;
+            }
             h1{
                 @extend .h2;
             }
             .gradient_button{
                 width:320px;
+                @include respond-to("mobile") {
+                    width:100%;
+                }
                 a{
                     @include gradient-button;
+                    @include respond-to("mobile"){
+                        padding:5px 0px;
+                    }
                 }
             }
         }
@@ -594,12 +788,19 @@ body{
             position:relative;
             border:1px solid #D9D9D9;
             border-radius:20px;
+            @include respond-to("mobile") {
+                width:100%;
+                margin-top:10px;
+            }
             .section7-border-icon{
                 position:absolute;
                 right:20px;
                 top:-20px;
                 width:40px;
                 height:40px;
+                @include respond-to("mobile") {
+                    display: none;
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -613,11 +814,21 @@ body{
                 margin-left:60px;
                 margin-top:50px;
                 margin-bottom:0;
+                @include respond-to("mobile") {
+                    font-size:12px;
+                    margin-left:10px;
+                    margin-top:30px;
+                }
             }
             ul{
                 margin-top:10px;
                 margin-left:60px;
                 margin-bottom:50px;
+                @include respond-to("mobile") {
+                    margin-left:10px;
+                    margin-top:10px;
+                    margin-bottom:30px;
+                }
                 li{
                     margin-top:10px;
                     font-size:18px;
@@ -625,6 +836,10 @@ body{
                     color:$black;
                     position:relative;
                     padding-left:15px;
+                    @include respond-to("mobile") {
+                        font-size:12px;
+                        margin-top:5px;
+                    }
                     &:before{
                         position:absolute;
                         left:0px;
@@ -634,6 +849,9 @@ body{
                         width:5px;
                         height:5px;
                         border-radius:100px;
+                        @include respond-to("mobile") {
+                            top:5px;
+                        }
                     }
                     a{
                         color:$black;
@@ -679,11 +897,23 @@ body{
         border-radius:20px;
         overflow:hidden;
         margin-top:100px;
+        
+        @include respond-to("mobile") {
+            height:auto;
+            margin-top:50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
         .section8-background{
             position:absolute;
             right:0;
             top:0;
             width:20%;
+            @include respond-to("mobile") {
+                display: none;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -695,6 +925,14 @@ body{
             right:10%;
             bottom:0;
             width:25%;
+            @include respond-to("mobile") {
+                width:90%;
+                position: relative;
+                right:0px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:20px;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -707,10 +945,21 @@ body{
             left:76px;
             top:50%;
             transform:translate(0%, -50%);
+            @include respond-to("mobile") {
+                position:relative;
+                width:100%;
+                top:inherit;
+                left:0;
+                transform: none;
+            }
             h1{
                 @extend .h1;
                 color:$black;
                 margin:0;
+                @include respond-to("mobile") {
+                    margin-top:40px;
+                    margin-left:10px;
+                }
             }
             p{
                 margin:0;
@@ -718,11 +967,22 @@ body{
                 color:$black;
                 font-weight:400;
                 @extend .p;
+                @include respond-to("mobile") {
+                    margin-top:10px;
+                    margin-left:10px;
+                    width:80%;
+                }
             }
             .section8-buttons{
                 @include flex-between;
                 justify-content: flex-start;
                 margin-top:50px;
+                @include respond-to("mobile") {
+                    margin-top:20px;
+                    width:calc(100% - 20px);
+                    margin-left:auto;
+                    margin-right: auto;
+                }
                 a{
                     padding:15px 50px;
                     color:$white;
@@ -730,11 +990,20 @@ body{
                     border-radius:10px;
                     font-size:18px;
                     font-weight:500;
+                    @include respond-to("mobile") {
+                        width:100%;
+                        padding:15px 0px;
+                        text-align: center;
+                        font-size:14px;
+                    }
                 }
                 img{
                     width:100px;
                     height:100px;
                     margin-left:20px;
+                    @include respond-to("mobile") {
+                        display: none;
+                    }
                 }
             }
         }
@@ -743,6 +1012,9 @@ body{
 
 .students-section{
     margin-top:70px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .students-section-header{
         position:relative;
         width:100%;
@@ -750,6 +1022,9 @@ body{
             @extend .h1;
             color:$black;
             width:60%;
+            @include respond-to("mobile") {
+                width:100%;
+            }
         }
         a{
             position: absolute;
@@ -758,17 +1033,27 @@ body{
             font-size:16px;
             color:$black;
             text-decoration: underline;
+            @include respond-to("mobile") {
+                display: none;
+            }
         }
     }
     .students-section-flex{
         @include flex-between;
         width:100%;
         margin-top:50px;
+        @include respond-to("mobile") {
+            margin-top:20px;
+        }
         .student-flex-item{
             width:32%;
             background-color:#F6F6F6;
             border-radius:20px;
             overflow:hidden;
+            @include respond-to("mobile") {
+                width:100%;
+                margin-top:10px;
+            }
             .students-item-content{
                 width:100%;
                 height:100%;
@@ -777,9 +1062,13 @@ body{
                     width:100%;
                     height:280px;
                     overflow:hidden;
+                    @include respond-to("mobile"){
+                        height:200px;
+                    }
                     img{
                         width:100%;
                         height:100%;
+                        object-fit: cover;
                     }
                 }
                 .students-item-content-text{
@@ -809,6 +1098,9 @@ body{
                     color:$primary;
                     font-weight:500;
                     font-size:18px;
+                    @include respond-to("mobile") {
+                        font-size:14px;
+                    }
                 }
             }
         }
@@ -817,6 +1109,9 @@ body{
 
 .section-students-slider{
     margin-top:70px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .section-students-slider-header{
         width:100%;
         position:relative;
@@ -824,6 +1119,9 @@ body{
             @extend .h1;
             color:$black;
             width:80%;
+            @include respond-to("mobile") {
+                width:100%;
+            }
         }
         a{
             position: absolute;
@@ -833,6 +1131,9 @@ body{
             font-weight:400;
             text-decoration: underline;
             color:$black;
+            @include respond-to("mobile") {
+                display: none;
+            }
         }
     }
     .section-students-slider-slider{
@@ -852,16 +1153,25 @@ body{
             background-size:contain;
             background-repeat: no-repeat;
             background-position: center;
+            @include respond-to("mobile"){
+                width:40px;
+                height:40px;
+            }
             cursor:pointer;
             &.slick-next{
                 right:-20px;
                 transform:translate(0%, -50%);
+                @include respond-to("mobile"){
+                    right:0;
+                }
 
             }
             &.slick-prev{
                 left:-20px;
                 transform:translate(0%, -50%) rotate(180deg);
-                
+                @include respond-to("mobile"){
+                    left:0px;
+                }
             }
         }
         .slick-dots{
@@ -871,6 +1181,9 @@ body{
             left:50%;
             margin-right:-50%;
             transform:translate(-50%,0);
+            @include respond-to("mobile"){
+                flex-direction: row;
+            }
             li button{
                 font-size:0px;
                 width:6px;
@@ -996,6 +1309,9 @@ body{
 
 .section-news{
     margin-top:150px;
+    @include respond-to("mobile") {
+        margin-top:100px;
+    }
     .section-news-header{
         width:100%;
         position:relative;
@@ -1003,6 +1319,9 @@ body{
             width:60%;
             @extend .h1;
             color:$black;
+            @include respond-to("mobile") {
+                width:100%;
+            }
         }
         a{
             position: absolute;
@@ -1012,16 +1331,27 @@ body{
             font-size:18px;
             font-weight:400;
             text-decoration: underline;
+            @include respond-to("mobile") {
+                display: none;
+            }
         }
     }
     .section-news-flex{
         @include flex-between;
+        @include respond-to("mobile") {
+            flex-direction: column-reverse;
+        }
         .section-big-news{
             width:49%;
             height:600px;
             border-radius:20px;
             overflow:hidden;
             position:relative;
+            @include respond-to("mobile") {
+                width:100%;
+                height:280px;
+                margin-top:10px;
+            }
             .background-news{
                 position:absolute;
                 z-index:1;
@@ -1050,10 +1380,17 @@ body{
                 left:20px;
                 z-index: 3;
                 width:90%;
+                @include respond-to("mobile") {
+                    bottom:10px;
+                    left:10px;
+                }
                 h2{
                     font-weight:400;
                     color:$white;
                     font-size:16px;
+                    @include respond-to("mobile") {
+                        font-size:12px;
+                    }
                 }
                 p{
                     font-weight:500;
@@ -1061,6 +1398,10 @@ body{
                     color:$white;
                     font-size:16px;
                     margin-top:20px;
+                    @include respond-to("mobile") {
+                        font-size:12px;
+                        margin-top:10px;
+                    }
                 }
             }
         }
@@ -1071,13 +1412,19 @@ body{
             justify-content: space-between;
             flex-direction: column;
             height:600px;
+            @include respond-to("mobile") {
+                width:100%;
+                height:auto;
+                margin-top:10px;
+            }
             .section-news-item{
                 width:100%;
-                height:283px;
+                height:150px;
                 position:relative;
                 border-radius:20px;
                 overflow:hidden;
                 position:relative;
+                margin-top:10px;
                 .background-news{
                     position:absolute;
                     z-index:1;
@@ -1106,10 +1453,19 @@ body{
                     left:20px;
                     z-index: 3;
                     width:90%;
+                    @include respond-to("mobile") {
+                        bottom:10px;
+                        left:10px;
+                    }
                     h2{
                         font-weight:400;
                         color:$white;
                         font-size:16px;
+                        @include respond-to("mobile") {
+                            font-size:12px;
+                            margin:0px;
+                            margin-top:10px;
+                        }
                     }
                     p{
                         font-weight:500;
@@ -1117,6 +1473,10 @@ body{
                         color:$white;
                         font-size:16px;
                         margin-top:20px;
+                        @include respond-to("mobile") {
+                            margin-top:5px;
+                            font-size:12px;
+                        }
                     }
                     .news-tag{
                         p{
@@ -1130,6 +1490,9 @@ body{
                             border-radius:5px;
                             text-decoration: none;
                             display: inline;
+                            @include respond-to("mobile") {
+                                font-size:12px;
+                            }
                         
                         }
                     }
@@ -1142,6 +1505,9 @@ body{
 
 .section-magazine{
     margin-top:100px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .section-magazine-header{
         width:100%;
         position: relative;
@@ -1149,6 +1515,9 @@ body{
             width:60%;
             @extend .h1;
             color:$black;
+            @include respond-to("mobile") {
+                width:100%;
+            }
         }
         a{
             position: absolute;
@@ -1158,21 +1527,34 @@ body{
             text-decoration: underline;
             color:$black;
             font-weight: 400;
+            @include respond-to("mobile") {
+                display: none;
+            }
         }
     }
     .section-magazine-flex{
         @include flex-between;
         width:100%;
         margin-top:50px;
+        @include respond-to("mobile") {
+            margin-top:20px;
+        }
         .section-magazine-item{
             width:32%;
             border-radius:20px;
             overflow:hidden;
             background:#eeeeee;
+            @include respond-to("mobile") {
+                width:100%;
+                margin-top:10px;
+            }
             img{
                 width:100%;
                 height:280px;
                 object-fit: cover;
+                @include respond-to("mobile") {
+                    height:200px;
+                }
             }
             h2{
                 @extend .p;
@@ -1182,6 +1564,10 @@ body{
                 margin-top:20px;
                 margin-bottom:0;
                 width:85%;
+                @include respond-to("mobile") {
+                    margin-left:20px;
+                    margin-top:10px;
+                }
             }
             p{
                 @extend .p;
@@ -1191,6 +1577,10 @@ body{
                 margin-bottom:50px;
                 font-weight:500;
                 margin-left:30px;
+                @include respond-to("mobile") {
+                    margin-left:20px;
+                    margin-bottom:30px;
+                }
             }
         }
     }
@@ -1198,6 +1588,9 @@ body{
 
 .section-footer-qr{
     margin-top:150px;
+    @include respond-to("mobile") {
+        margin-top:50px;
+    }
     .section-footer-qr-plashka{
         background-color:#EEEEEE;
         position:relative;
@@ -1205,6 +1598,9 @@ body{
         overflow:hidden;
         width:100%;
         height:425px;
+        @include respond-to("mobile") {
+            height:auto;
+        }
         .plashka-background{
             position:absolute;
             bottom:0;
@@ -1226,6 +1622,9 @@ body{
             top:50%;
             transform: translate(0%,-50%);
             z-index: 2;
+            @include respond-to("mobile") {
+                display: none;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -1239,10 +1638,21 @@ body{
             transform: translate(0%,-50%);
             width:50%;
             z-index: 3;
+            @include respond-to("mobile") {
+                position:relative;
+                top:0;
+                left:0;
+                transform: none;
+                width:100%;
+            }
             h1{
                 @extend .h1;
                 color:$black;
                 margin:0;
+                @include respond-to("mobile") {
+                    margin-left:10px;
+                    margin-top:30px;
+                }
             }
             p{
                 margin:0;
@@ -1250,6 +1660,11 @@ body{
                 margin-bottom:80px;
                 @extend .p;
                 font-weight: 400;
+                @include respond-to("mobile") {
+                    margin-top:10px;
+                    margin-left:10px;
+                    margin-bottom:20px;
+                }
             }
             a{
                 background:$gradient;
@@ -1259,6 +1674,15 @@ body{
                 font-weight:500;
                 border-radius: 10px;
                 cursor: pointer;
+                @include respond-to("mobile") {
+                    width:calc(100% - 20px);
+                    padding:15px 0px;
+                    text-align: center;
+                    font-size:14px;
+                    display: block;;
+                    margin:auto;
+                    margin-bottom:50px;
+                }
             }
         }
     }
@@ -1273,12 +1697,19 @@ body{
     position:relative;
     height:100vh;
     max-height:800px;
+    @include respond-to("mobile"){
+      max-height: 100%;
+      height:100%;           
+    }
     .parent-background{
         position:absolute;
         z-index: 1;
         bottom:0;
         right:0;
         width:50%;
+        @include respond-to("mobile"){
+            width:100%;
+        }
         img{
             width:100%;
             height:100%;
@@ -1291,26 +1722,52 @@ body{
         width:100%;
         .parent-text{
             width:68%;
+            @include respond-to("mobile"){
+                width:100%;   
+                padding-top:100px;
+            }
             h1{
                 @extend .h2;
                 color:$black;
+
+            @include respond-to("mobile"){
+                font-size:20px;
+                line-height: 26px;   
+            }
             }
             p{
                 @extend .p;
+            }
+            li{
+                @extend .p;
+            
             }
             .main-parent-button{
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 margin-top:50px;
+
+                @include respond-to("mobile"){
+                    flex-direction: column-reverse;   
+                    margin-top:15px;
+                }
                 .person_button{
                     display: flex;
                     align-items: flex-start;
                     height:53px;
                     width:350px;
                     margin-left:10px;
+
+                    @include respond-to("mobile"){
+                        width:100%;
+                    }
                     a{
                         @include button-faces;
+
+                    @include respond-to("mobile"){
+                        flex-direction: row;
+                    }
                         img{
                             width:40px;
                             height:40px;
@@ -1333,6 +1790,10 @@ body{
                 .gradient_button{
                     width:220px;
 
+                    @include respond-to("mobile"){
+                        width:100%;
+                        margin-top:10px;
+                    }
                     height:53px;
                     a{
                         @include gradient-button;
@@ -1347,6 +1808,12 @@ body{
             border-radius:20px;
             overflow:hidden;
             position: relative;
+            @include respond-to("mobile"){
+              width:100%;   
+              height:380px;
+              margin-bottom:50px;
+              margin-top:20px;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -1395,6 +1862,10 @@ body{
             background-color:#f6f6f6;
             overflow:hidden;
             height:432px;
+            @include respond-to("mobile"){
+             width:100%;  
+             height:auto;
+            }
             img{
                 width:100%;
                 height:210px;
@@ -1405,6 +1876,11 @@ body{
                 margin:30px auto;
                 @extend .p;
                 font-weight: 400;
+                @include respond-to("mobile"){
+                    margin:10px auto;
+                    width:90%;
+                    margin-bottom:30px;
+                }
             }
         }
     }
@@ -1423,8 +1899,14 @@ body{
     }
     .parent-list-flex{
         @include flex-between;
+        @include respond-to("mobile"){
+            flex-direction: column-reverse;      
+        }
         .parent-list-image{
             width:49%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -1433,6 +1915,9 @@ body{
         }
         .parent-list-content{
             width:49%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .parent-list-item{
                 margin-bottom:20px;
                 background-color:#F6F6F6;
@@ -1445,15 +1930,30 @@ body{
                 padding-left:20px;
                 padding-top:25px;
                 padding-bottom:30px;
+                @include respond-to("mobile"){
+                    padding-top:10px;
+                    padding-left:10px;
+                    padding-bottom:20px;
+                }
                 img{
                     width:45px;
                     height:45px;
                     object-fit: cover;
+                    @include respond-to("mobile"){
+                        width:30px;
+                        height:30px;
+
+                    }
                 }
                 p{
                     margin:0;
                     margin-left:20px;
                     @extend .p;
+                    @include respond-to("mobile"){
+                        width:80%;
+                        margin-left:10px;
+                
+                    }
                 }
 
             }
@@ -1479,23 +1979,34 @@ body{
         flex-direction: column;
         margin: auto;
         margin-top: 30px;
+        @include respond-to("mobile"){
+            margin-top:20px;      
+        }
         .question{
             width: 100%;
             padding-bottom: 10px;
             border-bottom: 1px solid #dbdbdb;
             margin-top: 20px;
+            @include respond-to("mobile"){
+                margin-top:10px;
+            }
             h1{
                 cursor:pointer;
                 font-size:25px;
                 font-weight:600;
                 color:$black;
                 position: relative;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    font-weight:500;
+                }
                 &:before{
                     position: absolute;
                     right: 0;
                     top: 0;
                     content: "+";
                     color: #233340;
+                    font-weight:400;
                 }
             }
             .question-answer{
@@ -1547,6 +2058,7 @@ body{
         width:100%;
         @include flex-center;
         flex-direction: column;
+       
         .student-about-item{
             width:100%;
             margin-top:16px;
@@ -1554,37 +2066,60 @@ body{
             border:1px solid #E6E6E6;
             border-radius:20px;
             background:linear-gradient(180deg, #FFFFFF,#D6D6D6);
+            @include respond-to("mobile"){
+                flex-direction: column-reverse;
+            }
             .student-about-item-image{
                 width:40%;
                 margin:12px;
                 border-radius:16px;
                 overflow:hidden;
+                @include respond-to("mobile"){
+                    width:90%;
+                }
                 img{
                     width:100%;
                     height:275px;
                     object-fit: cover;
+                    @include respond-to("mobile"){
+                        height:150px;
+                    }
                 }
             }
             .student-about-item-text{
                 width:55%;
+                @include respond-to("mobile"){
+                    width:90%;
+                }
                 h1{
                     color:$primary;
                     @extend .h1;
                     font-weight:500;
                     margin:0;
                     width:80%;
+                    @include respond-to("mobile"){
+                        margin-top:20px;
+                    }
                 }
                 h2{
                     color:$black;
                     font-size:18px;
                     font-weight:900;
                     width:80%;
+                    @include respond-to("mobile"){
+                        font-size:12px;
+                        width:90%;
+                    }
                 }
                 p{
                     color:$black;
                     font-size:18px;
                     font-weight:400;
                     width:80%;
+                    @include respond-to("mobile"){
+                        font-size:12px;
+                        width:90%;
+                    }
                 }
             }
         }
@@ -1598,17 +2133,29 @@ body{
     .students-text-section-flex{
         width:100%;
         @include flex-between;
+        @include respond-to("mobile"){
+            flex-direction: column-reverse;      
+        }
         .student-text-section-image{
             width:40%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             img{
                 width:100%;
                 height:340px;
                 object-fit: cover;
                 border-radius:20px;
+                @include respond-to("mobile"){
+                    height:200px;
+                }
             }
         }
         .student-text-section-content{
             width:55%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             h1{
                 @extend .h2;
                 margin:0px;
@@ -1638,6 +2185,9 @@ body{
             top:0;
             right:0;
             width:350px;
+            @include respond-to("mobile"){
+                display: none;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -1648,6 +2198,9 @@ body{
             width:90%;
             margin:auto;
             margin-top:50px;
+            @include respond-to("mobile"){
+                margin-top:20px;  
+            }
             h1{
                 @extend .h1;
             }
@@ -1661,6 +2214,10 @@ body{
             .students-icons-section-content-header-item{
                 margin-top:50px;
                 width:32%;
+                @include respond-to("mobile"){
+                    margin-top:10px;
+                    width:100%;
+                }
                 img{
                     width:50px;
                     height:50px;
@@ -1672,6 +2229,9 @@ body{
                     @extend .p;
                     font-weight:400;
                     width:80%;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                    }
                 }
             }
         }
@@ -1692,15 +2252,25 @@ body{
     .students-adv-flex{
         margin-top:50px;
         @include flex-between;
+        @include respond-to("mobile"){
+            margin-top:20px;      
+        }
         .students-adv-flex-item{
             width:32%;
             background:#F6F6F6;
             border-radius:20px;
             overflow:hidden;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:10px;
+            }
             .students-adv-item-image{
                 position:relative;
                 width:100%;
                 height:285px;
+                @include respond-to("mobile"){
+                    height:200px;
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -1724,12 +2294,20 @@ body{
                 width:90%;
                 margin:20px auto;
                 height:220px;
+                @include respond-to("mobile"){
+                    height:auto;
+                }
                 h1{
                     font-weight:600;
                     margin-top:20px;
                     font-size:18px;
                     color:$black;
                     width:90%;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                        font-size:12px;
+
+                    }
                 }
                 p{
                     font-weight:400;
@@ -1738,6 +2316,12 @@ body{
                     line-height: 26px;
                     color:$black;
                     width:90%;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                        font-size:12px;
+                        line-height: 18px;
+                        margin-bottom:30px;
+                    }
                 }
             }
         }
@@ -1746,16 +2330,25 @@ body{
 
 .students-text-right{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;          
+    }
     .students-text-right-flex{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include respond-to("mobile"){
+         flex-direction: column;      
+        }
         .student-text-right-left{
             width:55%;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             flex-direction: column;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             h1{
                 @extend .h1;
                 margin:0px;
@@ -1773,9 +2366,17 @@ body{
                 align-items: center;
                 justify-content: flex-start;
                 margin-top:70px;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                }
                 a{
                     @include gradient-button;
                     width:320px;
+                    padding:5px 0px;
+                    @include respond-to("mobile"){
+                        width:100%;
+                        padding:5px 0px;
+                    }
                 }
             }
         }
@@ -1784,6 +2385,11 @@ body{
             height:400px;
             border-radius:20px;
             overflow:hidden;
+            @include respond-to("mobile"){
+             width:100%;  
+             margin-top:20px;
+             height:200px;
+            }
             img{
                 width: 100%;
                 height:100%;
@@ -1810,6 +2416,9 @@ body{
             text-decoration: underline;
             font-weight: 400;
             color:$black;
+            @include respond-to("mobile"){
+                display: none;
+            }
         }
     }
     .students-news-flex{
@@ -1819,10 +2428,17 @@ body{
             background-color:#EEEEEE;
             border-radius:20px;
             overflow:hidden;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:10px;
+            }
             img{
                 width:100%;
                 height:280px;
                 object-fit: cover;
+                @include respond-to("mobile"){
+                    height:200px;
+                }
             }
             h1{
                 font-size:18px;
@@ -1831,6 +2447,11 @@ body{
                 width:90%;
                 margin:auto;
                 margin-top:20px;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    margin-top:10px;
+                    line-height: 18px;
+                }
             }
             p{
                 font-size:18px;
@@ -1840,6 +2461,10 @@ body{
                 margin:auto;
                 margin-top:20px;
                 margin-bottom:50px;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    margin-bottom:30px;
+                }
             }
         }
     }
@@ -1855,6 +2480,12 @@ body{
 
 .button-icons{
     @include flex-between;
+    @include respond-to("mobile"){
+        flex-direction: row;
+        position: absolute;
+        bottom:50px;
+        z-index:5;          
+    }
     img{
         width:120px;
         height:120px;
@@ -1868,17 +2499,26 @@ body{
         h1{
             @extend .h1;
             width:80%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
         }
         p{
             @extend .p;
             width:80%;
             font-weight:400;
+            @include respond-to("mobile"){
+                width:100%;
+            }
         }
     }
     .coaches-adv-flex{
         @include flex-between;
         margin-top:30px;
         flex-wrap: wrap;
+        @include respond-to("mobile"){
+            margin-top:20px;      
+        }
         .coaches-adv-item{
             width:49%;
             margin-top:20px;
@@ -1886,6 +2526,11 @@ body{
             height:280px;
             border-radius:20px;
             overflow:hidden;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:10px;
+                height:300px;
+            }
             .coaches-adv-background-image{
                 position:absolute;
                 top:0;
@@ -1921,10 +2566,19 @@ body{
                     font-size:16px;
                     font-weight:600;
                     width:60%;
+                    @include respond-to("mobile"){
+                        flex-direction: column;
+                        font-size:12px;
+                    }
                     img{
                         width:36px;
                         margin-right:10px;
                         height:36px;
+                        @include respond-to("mobile"){
+                            margin-bottom:10px;
+                            width:24px;
+                            height:24px;
+                        }
                     }
                 }
                 p{
@@ -1933,6 +2587,10 @@ body{
                     font-size:16px;
                     width:80%;
                     font-weight:400;
+                    @include respond-to("mobile"){
+                        font-size:12px;
+                        width:90%;
+                    }
                 }
             }
         }
@@ -1941,15 +2599,25 @@ body{
 
 .coaches-list{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;          
+    }
     .coaches-list-flex{
         display: flex;
         align-items: flex-start;
         justify-content:flex-end;
         position: relative;
+        @include respond-to("mobile"){
+            flex-direction: column;      
+        }
         .coaches-list-header{
             width:49%;
             position:absolute;
             left:0;
+            @include respond-to("mobile"){
+                position: relative;
+                width:100%;
+            }
             h1{
                 @extend .h1;
             }
@@ -1964,22 +2632,35 @@ body{
             align-items: flex-start;
             justify-content: space-between;
             flex-direction: column;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .coaches-list-item{
                 margin-bottom:50px;
                 border-bottom:2px solid $primary;
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
+                @include respond-to("mobile"){
+                    flex-direction: column;
+                    margin-bottom:20px;
+                }
                 .coachest-list-number{
                     p{
                         font-size:48px;
                         color:$primary;
                         font-weight:600;
                         margin-top:0px;
+                        @include respond-to("mobile"){
+                            margin:0;
+                        }   
                     }
                 }
                 .coaches-list-text{
                     margin-left:20px;
+                    @include respond-to("mobile"){
+                        margin-left:0;
+                    }
                     h1{
                         margin:0px;
                         font-size:18px;
@@ -1990,12 +2671,21 @@ body{
                         background-color:#D9D9D9;
                         display: inline-block;
                         margin-top:10px;
+                        @include respond-to("mobile"){
+                            font-size:12px;
+                            padding:5px 30px;
+                        }
                     }
                     p{
                         @extend .p;
                         margin-top:20px;
                         line-height: 24px;
                         margin-bottom:32px;
+                        @include respond-to("mobile"){
+                            margin-bottom:20px;
+                            line-height: 18px;
+                            margin-top:10px;
+                        }
                     }
                 }
             }
@@ -2005,6 +2695,9 @@ body{
 
 .coaches-grey-section{
     margin-top:70px;
+    @include respond-to("mobile"){
+     margin-top:50px;          
+    }
     .coacheas-grey-content{
         background:linear-gradient(205deg, #C6C9C9,#E6E7E7); 
         border-radius: 20px;
@@ -2013,15 +2706,25 @@ body{
         .coaches-grey-text{
             width:90%;
             margin:50px auto;
+            @include respond-to("mobile"){
+             margin-top:20px;
+             margin-bottom:20px;  
+            }
             h1{
                 @extend .h1;
                 width:70%;
+                width:90%;
             }
             p{
                 @extend .p;
                 width:60%;
                 margin-top: 30px;
                 margin-bottom:50px;
+                @include respond-to("mobile"){
+                    width:90%;
+                    margin-top:10px;
+                    marign-bottom:30px;
+                }
             }
             a{
                 background: $gradient;
@@ -2030,6 +2733,14 @@ body{
                 color:$white;
                 font-size:18px;
                 font-weight:500;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    width:100%;
+                    padding:15px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         
         }
@@ -2038,17 +2749,27 @@ body{
             bottom: 0px;
             right:0px;
             width:500px;
+            @include respond-to("mobile"){
+                width:100%;
+                position: relative;
+            }
         }
     }
 }
 
 .coaches-person-slider-block{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;
+    }
     .coaches-person-header{
         width:100%;
         h1{
             @extend .h1;
             width:70%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
         }
     }
     .coaches-person-slider{
@@ -2056,6 +2777,11 @@ body{
         width:calc(100% - 10%);
         margin-left:15%;
         position: relative;
+        @include respond-to("mobile"){
+         width:95%;
+         margin:auto;
+         margin-top:100px;       
+        }
         .slick-list{
             overflow: hidden;
             .slick-track{
@@ -2066,11 +2792,19 @@ body{
                     align-items: flex-start;
                     justify-content: space-between;
                     flex-direction: column;
+                    @include respond-to("mobile"){
+                        margin:0 10px;
+                    }
                     img{
                         width:300px;
                         height:300px;
                         border-radius:20px;
                         object-fit: cover;
+                        @include respond-to("mobile"){
+                            width:100%;
+                            height:100%;
+                            border-radius:50px;
+                        }   
                     }
                     h1{
                         margin-top:20px;
@@ -2078,14 +2812,26 @@ body{
                         letter-spacing: -2%;
                         font-weight:600;
                         margin-bottom:0px;
+                        @include respond-to("mobile"){
+                            font-size:14px;
+                            margin-top:10px;
+                        }
                     }
                     ul{
                         margin-top:30px;
+                        @include respond-to("mobile"){
+                            margin-top:0px;
+                        }
                         li{
                             list-style:disc;
                             margin-bottom:10px;
                             font-size:18px;
                             font-weight:400;
+                            @include respond-to("mobile"){
+                                font-size:14px;
+                                margin-top:10px;
+                                margin-left:10px;
+                            }
                         }
                     }
                 }
@@ -2094,7 +2840,7 @@ body{
         .slick-arrow{
             position: absolute;
             z-index: 100;
-            top:-100px;
+            top:-80px;
             font-size:0px;
             border:none;
             background-color:transparent;
@@ -2103,12 +2849,21 @@ body{
             height:50px;
             background-repeat: no-repeat;
             background-position: center;
+            
             &.slick-next{
                 right:10%;
+                @include respond-to("mobile"){
+                    right:0;
+                    left:15%;
+                }
             }
             &.slick-prev{
                 right:14%;
                 transform: rotate(180deg);
+                @include respond-to("mobile"){
+                    right:0;
+                    left:0;
+                }
             }
         }
     }
@@ -2116,8 +2871,14 @@ body{
 
 .coaches-services{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;           
+    }
     .coaches-services-header{
         width:70%;
+        @include respond-to("mobile"){
+            width:100%;       
+        }
         h1{
             @extend .h2;
         }
@@ -2130,6 +2891,10 @@ body{
             background-color:#F6F6F6;
             border:1px solid #E1E1E1;
             border-radius:20px;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:10px;
+            }   
             h1{
                 background:$gradient;
                 padding:5px 10px;
@@ -2140,12 +2905,19 @@ body{
                 font-size:16px;
                 font-weight:500;
                 display: inline-block;
+                @include respond-to("mobile"){
+                    font-size:14px;
+                }
             }
             p{
                 @extend .p;
                 margin-left:20px;
                 margin-top:20px;
                 margin-bottom:30px;
+                @include respond-to("mobile"){
+                    margin-top:0px;
+                    margin-bottom:20px;
+                }
             }
         }
     }
@@ -2153,12 +2925,18 @@ body{
 
 .coaches-keys{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;           
+    }
     .coaches-keys-header{
         width:100%;
         position: relative;
         h1{
             @extend .h1;
             width:60%;
+            @include respond-to("mobile"){
+               width:100%; 
+            }  
         }
     }
     .coaches-keys-flex{
@@ -2169,10 +2947,17 @@ body{
             border-radius:20px;
             background-color:#F6F6F6;
             overflow:hidden;
+            @include respond-to("mobile"){
+             margin-top:10px;
+             width:100%;   
+            }
             .coaches-key-background{
                 width:100%;
                 height:280px;
                 position: relative;
+                @include respond-to("mobile"){
+                    height:200px;
+                }
                 img{
                     width:100%;
                     height:100%;
@@ -2190,16 +2975,27 @@ body{
                     font-size:24px;
                     font-weight:600;
                     z-index: 2;
+                    @include respond-to("mobile"){
+                        font-size:14px;
+                        line-height: 18px;
+                    }
                 }
             }
             .coaches-key-content{
                 height:260px;
+                @include respond-to("mobile"){
+                    height:auto
+                }
                 p{
                     margin-left:20px;
                     margin-top:50px;
                     width:90%;
                     @extend .p;
                     font-weight: 400;
+                    @include respond-to("mobile"){
+                        margin-top:20px;
+                        margin-bottom:30px;
+                    }
                 }
             }
         }
@@ -2215,15 +3011,42 @@ body{
     width:100vw;
     height:100vh;
     max-height:720px;
+    @include respond-to("mobile"){
+     max-height: 100%;
+     height:100%;       
+    }
     .main-coach-left{
         width:60%;
+        @include respond-to("mobile"){
+            width:100%;   
+        }
+    }
+    .main-coach-right{
+        @include respond-to("mobile"){
+         width:100%;
+         height:220px;   
+         border-radius: 20px;
+         overflow: hidden;
+        }
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
     }
     .main-coach-flex{
         @include flex-between;
         align-items: flex-end;
         width:100%;
         height:100%;
+        @include respond-to("mobile"){
+            flex-direction: column-reverse;
+            padding-top:120px;
+        }
         .main-coach-back{
+            @include respond-to("mobile"){
+                display: none;
+            }
             a{
                 color:#666666;
                 font-weight:400;
@@ -2249,10 +3072,18 @@ body{
             .main-coach-content-flex{
                 @include flex-between;
                 width:100%;
+                @include respond-to("mobile"){
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
                 .main-coach-content-item{
                     width:19%;
                     background:$white;
                     border-radius:10px;
+                    @include respond-to("mobile"){
+                    width:48%;
+                    margin-top:10px;
+                    }
                     h2{
                         @extend .p;
                         color:#666666;
@@ -2294,7 +3125,9 @@ body{
                         margin-top:5px;
                         @extend .p;
                         font-weight: 400;
-                        list-style: disc
+                        list-style: disc;
+                        width:80%;
+                        margin-left:15px;
                     }
                 }
             }
@@ -2302,19 +3135,34 @@ body{
                 @include flex-between;
                 justify-content: flex-start;
                 margin-top:70px;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                }
                 .gradient_button{
                     width:220px;
+                    @include respond-to("mobile"){
+                        width:100%;
+                    }
                     a{
                         @include gradient-button;
+                        padding:5px 0px;
                     }
                 }
                 .main-coach-content-buttons-text{
                     margin-left:10px;
                     width:70%;
+                    @include respond-to("mobile"){
+                        margin-left:0px;
+                        width:100%;
+                    }
                     p{
                         font-size:14px;
                         color:#666666;
                         font-weight:400;
+                        @include respond-to("mobile"){
+                            font-size:12px;
+                            text-align: center;
+                        }
                     }
                 }
                 
@@ -2326,6 +3174,9 @@ body{
 
 .about-coach-section{
     margin-top:70px;
+    @include respond-to("mobile"){
+        margin-top:50px;       
+    }
     .about-coach-section-header{
         width:100%;
         position: relative;
@@ -2347,18 +3198,32 @@ body{
             border-radius:20px;
             background:linear-gradient(0deg, #878787, #F1F1F1);
             margin:10px;
+            @include respond-to("mobile"){
+                width:calc(100% - 20px);
+                height:auto;
+            }   
             h1{
                 @extend .h1;
                 color:$primary;
                 margin-left:25px;
                 margin-top:30px;
                 margin-bottom:0;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                    margin-left:20px;
+                }
             }
             p{
                 @extend .p;
                 font-weight:400;
                 margin-top:30px;
                 margin-left:25px;
+                @include respond-to("mobile"){
+                    margin-top:10px;
+                    margin-left:20px;
+                    width:90%;
+                    margin-bottom:20px;
+                }
             }
         }
     }
@@ -2366,17 +3231,27 @@ body{
 
 .about-coach-list{
     margin-top:100px;
+    @include respond-to("mobile"){
+        margin-top:50px;       
+    }
     .about-coach-flex{
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
         position:relative;
         width:100%;
+        @include respond-to("mobile"){
+            flex-direction: column;   
+        }
         .about-coach-header{
             position: absolute;
             top:0;
             left:0;
             width:45%;
+            @include respond-to("mobile"){
+                width:100%;
+                position: relative;
+            }
             h1{
                 @extend .h1
             }
@@ -2384,21 +3259,34 @@ body{
         .about-coach-content{
             width:52%;
             position: relative;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .about-coach-content-item{
                 padding-bottom:30px;
                 width:100%;
                 border-bottom:2px solid $primary;
                 margin-bottom: 30px;
+                @include respond-to("mobile"){
+                    margin-bottom:20px;
+                    padding-bottom:10px;
+                }
                 h1{
                     font-size:28px;
                     margin:0;
                     color:$primary;
                     font-weight:600;
+                    @include respond-to("mobile"){
+                        font-size:20px;
+                    }
 
                 }
                 p{
                     @extend .p;
                     margin-top:20px;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                    }
                 }
                 &:nth-last-child(1){
                     border-bottom:0;
@@ -2410,6 +3298,9 @@ body{
 
 .about-coach-plashka-section{
     margin-top:100px;
+    @include respond-to("mobile"){
+        margin-top:50px;        
+    }
     .about-coach-plashka{
         background-color:#EEEEEE;
         border-radius: 20px;
@@ -2428,8 +3319,14 @@ body{
             margin:20px 50px;
             position: relative;
             z-index: 2;
+            @include respond-to("mobile"){
+                margin:20px 10px;
+            }
             .about-coach-plashka-text{
                 width:48%;
+                @include respond-to("mobile"){
+                    width:100%;
+                }
                 h1{
                     @extend .h1;
                     margin:0;
@@ -2439,6 +3336,9 @@ body{
                     margin-top:30px;
                     @extend .p;
                     font-weight:400;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                    }
                 }
             }
             .about-coach-plashka-image{
@@ -2446,6 +3346,11 @@ body{
                 height:520px;
                 border-radius:20px;
                 overflow:hidden;
+                @include respond-to("mobile"){
+                    width:90%;
+                    height:278px;
+                    margin:30px auto;
+                }   
                 img{
                     width:100%;
                     height:100%;
@@ -2458,14 +3363,23 @@ body{
 
 .coach-adv{
     margin-top:100px;
+    @include respond-to("mobile"){
+        margin-top:50px;       
+    }
     .coach-adv-flex{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include respond-to("mobile"){
+            flex-direction: column-reverse;   
+        }
         .coach-adv-ava{
             width:49%;
             height:510px;
             position:relative;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .coach-adv-ava-image{
                 width:100%;
                 height:100%;
@@ -2483,24 +3397,44 @@ body{
                 width:100%;
                 height:40%;
                 z-index: 2;
+                bottom:0;
             }
             .coach-adv-ava-content{
                 position: absolute;
                 bottom:30px;
                 left:30px;
-                width:90%;
+                width:80%;
                 z-index: 3;
+                @include respond-to("mobile"){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%,0);
+                }
                 h1{
                     @extend .h2;
                     color:$white;
+                    @include respond-to("mobile"){
+                        font-size:20px;
+                        margin:0;
+                        margin-bottom:10px;
+                    }
 
                 }
                 .coach-adv-ava-content-buttons{
                     @include flex-between;
                     justify-content: flex-start;
-                    
+                    @include respond-to("mobile"){
+                        width:100%;
+                    }
                     .gradient_button{
                         width:200px;
+                        @include respond-to("mobile"){
+                            width:100%;
+                        }
                         a{
                             @include gradient-button;
                             
@@ -2509,11 +3443,22 @@ body{
                     .video-button{
                         margin-left:10px;
                         width:250px;
+                        @include respond-to("mobile"){
+                            width:100%;
+                            margin-left:0;
+                            margin-top:10px;
+                        }
                         a{
                             @include gradient-button;
+                            @include respond-to("mobile"){
+                                padding:5px 0px;
+                            }
                             background:linear-gradient(0deg,#6E6E6E, #DFDFDF);
                             p{
                                 margin:8px 0px;
+                                @include respond-to("mobile"){
+                                    padding-left:5%;
+                                }
                             }
                         }
                     }
@@ -2522,19 +3467,32 @@ body{
         }
         .coach-adv-text{
             width:49%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .coach-adv-text-item{
                 padding-bottom:30px;
                 margin-bottom:30px;
                 border-bottom:2px solid $primary;
                 width:100%;
+                @include respond-to("mobile"){
+                    margin-bottom:20px;
+                    padding-bottom:10px;
+                }
                 h1{
                     color:$primary;
                     margin:0;
                     font-weight:600;
+                    @include respond-to("mobile"){
+                        font-size:14px;
+                    }
                 }
                 p{
                     margin-top: 20px;
                     @extend .p;
+                    @include respond-to("mobile"){
+                        margin-top:10px;
+                    }
                 }
                 &:nth-last-child(1){
                     border-bottom:none
@@ -2576,6 +3534,11 @@ body{
         height:510px;
         padding:50px 70px;
         position:relative;
+        @include respond-to("mobile"){
+            width:100%;
+            height:auto;
+            padding:20px 0px;   
+        }
         .contact-background{
             position: absolute;
             width:50%;
@@ -2585,17 +3548,39 @@ body{
         }
         h1{
             @extend .h1;
+            @include respond-to("mobile"){
+                margin-left:20px;
+            }
         }
         p{
-            @extend .p;
+            @extend .p; 
+            @include respond-to("mobile"){
+                margin-left:20px;
+                width:90%;
+            }
         }
         .contact-flex-item-button{
             margin-top:50px;
+            @include respond-to("mobile"){
+                margin-top:30px;
+                width:calc(100% - 40px);
+                margin-bottom:30px;
+                margin-left:auto;
+                margin-right:auto;
+            }
             a{
                 color:$white;
                 background:$gradient;
                 padding:15px 40px;
                 border-radius:10px;
+                @include respond-to("mobile"){
+                    width:100%;
+                    padding:15px 0px;
+                    font-size:14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
         .contact-flex-socials{
@@ -2603,6 +3588,12 @@ body{
             align-items: center;
             justify-content: flex-start;
             margin-top:50px;
+            @include respond-to("mobile"){
+                margin-top:30px;
+                width:calc(100% - 40px);
+                margin-left:auto;
+                margin-right: auto;;
+            }
             a{
                 width:50px;
                 height:50px;
@@ -4352,18 +5343,437 @@ body{
     }
 }
 
-
-
-
-
-
-
 //account finish
 
+//coaches start
+
+.section-coaches{
+    padding-top:70px;
+    background-color:#F6F6F6;
+    @include respond-to("mobile") {
+        padding-top:50px;
+    }
+    .coahes_header{
+        width:80%;
+        @include respond-to("mobile") {
+            width:100%;
+        }
+        h1{
+            @extend .h1;
+            color:$black;
+        }
+    }
+    .coaches_catalog{
+        width:100%;
+        margin-top:50px;
+        @include flex-between;
+        align-items: flex-start;
+        @include respond-to("mobile"){
+            margin-top:15px;
+        }
+        .coaches_sidebar{
+            width:25%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
+        }
+        .coaches_list{
+            width:72%;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:20px;
+            }
+            .coaches_list_flex{
+                @include flex-between;
+                flex-wrap: wrap;
+                width:100%;
+                .coaches_item{
+                    width:49%;
+                    margin-bottom:20px;
+                    background-color:#fff;
+                    border-radius:20px;
+                    overflow:hidden;
+                    @include respond-to("mobile"){
+                        width:100%;
+                        margin-top:10px;
+                    }
+                    .coach-image{
+                        width:100%;
+                        height:250px;
+                        position:relative;
+                        background-color:#D9D9D9;
+                        img{
+                            width:100%;
+                            height:100%;
+                            object-fit: cover;
+                        }
+                        .coach_tag{
+                            position:absolute;
+                            top:10px;
+                            left:10px;
+                            z-index: 1;
+                            @include flex-between;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            p{
+                                color:$black;
+                                font-size:14px;
+                                font-weight:500;
+                                border:1px solid #fff;
+                                border-radius:10px;
+                                padding:5px 10px;
+                                background:rgba(255,255,255,0.35);
+                                margin:0px 0px 5px 0px;
+                                padding-left:20px;
+                                position: relative;
+                                &:before{
+                                    position:absolute;
+                                    left:10px;
+                                    top:12px;
+                                    content:"";
+                                    background-color:$primary;
+                                    width:5px;
+                                    height:5px;
+                                    border-radius:100px;
+                                }
+                            }
+                        }
+                    }
+                    .coach_item_container{
+                        width:calc(100% - 60px);
+                        margin:0px auto;
+                        @include respond-to("mobile"){
+                            width:90%;
+                        }
+                        .coach_content{
+                            position:relative;
+                            width:100%;
+                            h1{
+                                color:$primary;
+                                font-size:24px;
+                                font-weight: 600;
+                            }
+                            .coach_flex{
+                                margin-top:10px;
+                                @include flex-between;
+                                flex-wrap: wrap;
+                                @include respond-to("mobile"){
+                                    flex-direction: row;
+                                }
+                                .coach_flex_item{
+                                    width:49%;
+                                    margin-bottom:10px;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    p:nth-child(1){
+                                        @extend .p;
+                                        color:#797979;
+                                        font-weight:400;
+                                        margin:0;
+                                    }
+                                    p:nth-child(2){
+                                        @extend .p;
+                                        color:$black;
+                                        font-weight:600;
+                                        margin:0;
+                                    }
+                                }
+                            }
+                            .coach_decription{
+                                margin-top:10px;
+                                h2{
+                                    @extend .p;
+                                    color:#797979;
+                                    font-weight: 400;
+                                    margin-bottom:0;
+                                }
+                                p{
+                                    margin-top:0;
+                                    color:$black;
+                                    font-weight:400;
+                                    font-size:18px;
+                                    @include respond-to("mobile") {
+                                        font-size:12px;
+                                    }
+                                   
+                                }
+                            }
+                            .coach_button{
+                                width:100%;
+                                height:50px;
+                                border-radius:10px;
+                                border:1px solid $primary;
+                                margin-top:20px;
+                                margin-bottom:30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                p{
+                                    color:$primary;
+                                    font-size:18px;
+                                    font-weight:500;
+                                    @include respond-to("mobile"){
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.coaches_list_button{
+    padding-bottom:100px;
+    width:320px;
+    @include respond-to("mobile") {
+        width:100%;
+        padding-bottom:50px;
+    }
+    a{
+        @include gradient-button;
+        @include respond-to("mobile"){
+            padding:5px 0px;
+        }
+    }
+}
+
+.coaches_sidebar{
+    width:100%;
+    border-radius:20px;
+    background-color: $white;
+    .coaches-filter{
+        width:calc(100% - 60px);
+        margin:20px auto;
+        h1{
+            color:$black;
+            font-size:18px;
+            font-weight:600;
+        }
+        .coaches_filter_form{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            width:100%;
+            label{
+                width:100%;
+                margin-top:20px;
+                p{
+                    color:#797979;
+                    font-size:16px;
+                    font-weight:500;
+                    margin:0;
+                }
+                select{
+                    margin-top:5px;
+                    width:100%;
+                    height:40px;
+                    border:none;
+                    border-radius:10px;
+                    background-color:#f5f5f5;
+                    padding:0px 10px;
+                }
+               
+            }
+            button{
+                    width:100%;
+                    height:50px;
+                    background:$gradient;
+                    border-radius: 10px;
+                    border:none;
+                    cursor:pointer;
+                    color:$white;
+                    margin-top:20px;
+                    font-size:18px;
+            }
+        }
+    }
+}
+//coaches finish
 
 
+footer{
 
+    margin-top:100px;
+    padding-top:100px;
+    width:100%;
+    background-color:#F6F6F6;
+    display: block;
+    position: relative;
+    @include respond-to("mobile") {
+        margin-top:50px;
+        padding-top:50px;
+    }
 
+    .footer-flex{
+        padding-top:70px;
+        @include flex-between;
+        align-items: flex-start;
+        @include respond-to("mobile"){
+            padding-top:0px;
+        }
+        .footer_logo{
+            width:20%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            @include respond-to("mobile"){
+                width:100%;
+            }
+            a{
+                max-width:220px;
+                img{
+                    filter:blur(0px);
+                    width:100%;
+                }
+            }
+            p{
+                color:$black;
+                margin-top:10px;
+                font-size:14px;
+                font-weight:400;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                }
+
+            }
+            .footer_social{
+                width:100%;
+                @include flex-between;
+               justify-content: flex-start;
+               @include respond-to("mobile"){
+                flex-direction: row;
+                margin-top:15px;
+               }
+                a{
+                    width:53px;
+                    height:53px;
+                    border-radius:100%;
+                    background-color:#949494;
+                    @include flex-center;
+                    margin-right:10px;
+                    @include respond-to("mobile"){
+                        width:35px;
+                        height:35px;
+                    }
+                    img{
+                        width:30px;
+                        height:30px;
+                        object-fit: contain;
+                        @include respond-to("mobile"){
+                            width:20px;
+                            height:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_info{
+            width:50%;
+            @include respond-to("mobile"){
+                display: none;
+            }
+            h1{
+                color:$black;
+                font-size:25px;
+                margin-top:0;
+                
+            }
+            ul{
+                width:100%;
+                @include flex-between;
+                flex-wrap: wrap;
+                margin-bottom:30px;
+                li{
+                    width:48%;
+                    margin-top:10px;
+                    a{
+                        color:#686868;
+                        font-size:18px;
+                        font-weight:400;
+                    }
+                }
+            }
+            p{
+                color:#686868;
+                font-size:16px;
+                font-weight:400;
+            }
+        }
+        .footer_buttons{
+            width:20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:15px;
+            }
+            a:nth-child(1){
+                width:250px;
+                height:50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border:1px solid $primary;
+                font-size:18px;
+                font-weight:400;
+                color:$primary;
+                border-radius:5px;
+                @include respond-to("mobile"){
+                    width:100%;
+                    font-size:14px;
+                }
+            }
+            a:nth-child(2){
+                width:250px;
+                height:50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size:18px;
+                background:$gradient;
+                font-weight:400;
+                color:$white;
+                border-radius:5px;
+                margin-top:20px;
+                @include respond-to("mobile"){
+                    width:100%;
+                    font-size:14px;
+                    margin-top:10px
+                }
+            }
+        }
+    }
+    .footer_sub{
+        margin-top:50px;
+        border-top:1px solid #858585;
+        padding-top:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom:50px;
+
+        @include respond-to("mobile"){
+            margin-top:10px;
+            padding-top:10px;
+        }
+        a{
+            margin:5px 0px;
+            color:#7E7E7E;
+            text-decoration: underline;
+            font-size:14px;
+            text-align: center;
+        }
+    }
+}
 
 
 @import "coaches.scss";

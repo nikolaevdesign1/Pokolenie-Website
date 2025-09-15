@@ -4,6 +4,15 @@ $('.section2_slider').slick({
     speed: 600,
     arrows: false,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
 })
 
 
@@ -11,7 +20,16 @@ $('.section4-logos-slider').slick({
     speed: 600,
     autoplay:true,
     arrows: false,
-    slidesToShow:7.3,
+    slidesToShow:7.3,   
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
     
 })
 
@@ -21,6 +39,15 @@ $('.section7-slider').slick({
     autoplay:true,
     arrows: false,
     slidesToShow:4.2,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
     
 })
 
@@ -31,18 +58,45 @@ $('.section-students-slider-slider').slick({
     infinite:true,
     centerMode: true,
     slidesToShow:4,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
 })
 
 $('.coaches-person-slider').slick({
   speed: 600,
   slidesToShow:5,
   infinite:true,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 })
 
 $('.journal-materials-slider').slick({
  
 arrows: true,
   slidesToShow:3,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
   
 })
 
@@ -117,3 +171,7 @@ $('.go_pass3').on('click',function(){
 });
 
   //popups finish
+
+  $('.mobile-burger').on('click',function(){
+    $('.mobile-menu, .mobile-burger').toggleClass("active");
+  });
