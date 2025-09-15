@@ -3622,6 +3622,9 @@ body{
         h1{ 
             @extend .h2;
             width:60%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
         }   
         p{
             color:#666666;
@@ -3636,15 +3639,25 @@ body{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include respond-to("mobile"){
+            margin-top:30px;
+            flex-direction: column;   
+        }
         .test-sidebar{
             width:23%;
             background-color:$white;
             border:1px solid #E6E6E6;
             border-radius:20px;
+            @include respond-to("mobile"){
+                width:100%;
+            }   
             .test-sidebar-header{
                 margin:20px auto;
                 width:80%;
                 text-align: center;
+                @include respond-to("mobile"){
+                    width:100%;
+                }
                 h1{
                     font-size:20px;
                     line-height: 120%;
@@ -3659,6 +3672,10 @@ body{
                 flex-direction: column;
                 width:95%;
                 margin:auto;
+                @include respond-to("mobile"){
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
                 a{
                     height:160px;
                     position:relative;
@@ -3666,6 +3683,9 @@ body{
                     border-radius:20px;
                     overflow: hidden;
                     margin-bottom:10px;
+                    @include respond-to("mobile"){
+                        width:48%;
+                    }
                     img{
                         position:absolute;
                         width:100%;
@@ -3690,10 +3710,16 @@ body{
         }
         .testimonials-items{
             width:72%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .testimonials-items-header{
                 h1{
                     margin:0;
                     font-size:30px;
+                    @include respond-to("mobile"){
+                        display: none;
+                    }
                 }
             }
             .testimonials-items-flex{
@@ -3706,6 +3732,9 @@ body{
                     height:560px;
                     border-radius:20px;
                     overflow:hidden;
+                    @include respond-to("mobile"){
+                        width:100%;
+                    }
                     img{
                         width:100%;
                         height:100%;
@@ -3731,6 +3760,9 @@ body{
        padding-top:150px;
         width:100%;
         position:relative;
+        @include respond-to("mobile"){
+            padding-top:100px;
+        }
         h1{
             @extend .h2;
         }
@@ -3749,11 +3781,17 @@ body{
             @extend .p;
             line-height: 26px;
             text-align: right;
+            @include respond-to("mobile"){
+                display: none;
+            }
         }
     }
 
 .journal-section{
     margin-top:80px;
+    @include respond-to("mobile"){
+        margin-top:30px;
+    }
     .journal-flex{
         width:100%;
         @include flex-between;
@@ -3764,19 +3802,31 @@ body{
             align-items: flex-start;
             justify-content: space-between;
             flex-direction: column;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .journal-big-cat{
                 ul{
                     li{
                         margin-bottom:20px;
+                        @include respond-to("mobile"){
+                            margin-bottom:10px;
+                        }
                         a{
                             @include flex-between;
                             justify-content: flex-start;
                             color:$black;
+                            @include respond-to("mobile"){
+                                flex-direction: row;
+                            }
                             @extend .p;
                             img{
                                 width:36px;
                                 height:36px;
-                                margin-right:20px
+                                margin-right:20px;
+                                @include respond-to("mobile"){
+                                    margin-right:10px;
+                                }
                             }
                         }
                     }
@@ -3788,11 +3838,17 @@ body{
                 align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
+                @include respond-to("mobile"){
+                    margin-top:10px;
+                }
                 .journal-small-cat-header{
                     h1{
                         color:$black;
                         font-size:24px;
                         margin:0;
+                        @include respond-to("mobile"){
+                            font-size:16px;
+                        }
                     }
                 }
                 .journal-small-cat-list{
@@ -3804,6 +3860,9 @@ body{
                         flex-direction: column;
                         li{
                             margin-bottom:20px;
+                            @include respond-to("mobile"){
+                                margin-bottom:10px;
+                            }
                             a{
 
                                 display: flex;
@@ -3812,10 +3871,16 @@ body{
                                 color:$black;
                                 font-size:18px;
                                 font-weight:400;
+                                @include respond-to("mobile"){
+                                    font-size:14px;
+                                }
                                 img{
                                     width:36px;
                                     height:36px;
                                     margin-right:20px;
+                                    @include respond-to("mobile"){
+                                        margin-right:10px;
+                                    }
                                 }
                             }
                         }
@@ -3828,20 +3893,31 @@ body{
                 align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
+                @include respond-to("mobile"){
+                    margin-top:30px;
+                    margin-bottom:30px;
+                }
                 .journal-ads-tg-header{
                     h1{
                         color:$black;
                         font-size:24px;
                         margin:0;
+                        @include respond-to("mobile"){
+                            font-size:14px;
+                        }
                     }
                     p{
                         @extend .p;
                         margin-top:20px;
                         margin-bottom:0;
+                        @include respond-to("mobile"){
+                            margin-top:10px;
+                        }
                     }
                 }
                 .journal-ads-tg-content{
                     margin-top:30px;
+                    width:100%;
                     img{
                         width:100%;
                         height:230px;
@@ -3849,6 +3925,9 @@ body{
                         overflow:hidden;
                         object-fit: cover;
                         margin-bottom:50px;
+                        @include respond-to("mobile"){
+                            margin-bottom:10px;
+                        }
                     }
                     a{
                       font-size:18px;
@@ -3857,6 +3936,14 @@ body{
                       padding:18px 50px;
                       background:$gradient;
                       border-radius:100px;
+                      @include respond-to("mobile"){
+                        width:100%;
+                        padding:18px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                      }
                       
                     }
                 }
@@ -3865,6 +3952,9 @@ body{
         }
         .journal-content{
             width:75%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             .journal-news-container{
                 background-color:#fff;
                 border:1px solid #E6E6E6;
@@ -3873,6 +3963,10 @@ body{
                 .journal-news-header{
                     margin-top:30px;
                     margin-left:40px;
+                    @include respond-to("mobile"){
+                        margin-left:20px;
+                        margin-top:20px;
+                    }
                     h1{
                         display: flex;
                         align-items: center;
@@ -3880,11 +3974,18 @@ body{
                         font-size:24px;
                         color:$black;
                         font-weight:600;
+                        @include respond-to("mobile"){
+                            font-size:14px;
+                        }
                         img{
                             width:36px;
                             height:36px;
                             object-fit: cover;
                             margin-right:10px;
+                            @include respond-to("mobile"){
+                                width:24px;
+                                height:24px;
+                            }
                         }
                     }
                 }
@@ -3895,15 +3996,25 @@ body{
                     flex-direction: column;
                     width:calc(100% - 80px);
                     margin:auto;
+                    @include respond-to("mobile"){
+                        width:calc(100% - 40px);
+                    }
                     .journal-news-item{
                         width:100%;
                         margin-top:20px;
                         padding-bottom:20px; 
                         border-bottom:1px solid #E6E6E6;
+                        @include respond-to("mobile"){
+                            margin-top:10px;
+                        }
                         a{
                             color:#353232;
                             font-size:18px;
                             line-height: 30px;
+                            @include respond-to("mobile"){
+                                font-size:12px;
+                                line-height: 18px;
+                            }
                             span{
                                 color:#808080;
                             }
@@ -3913,18 +4024,31 @@ body{
                 .journal-news-button-more{
                     margin-top:20px;
                     margin-bottom:20px;
+                    width:100%;
                     p{
                         font-size:18px;
                         font-weight:400;
+                        @include respond-to("mobile"){
+                            font-size: 14px;
+                            text-align: center;
+                            display: block;
+                            margin:auto;
+                        }
                     }
                 }
             }
             .journal-cases{
                 margin-top:50px;
+                @include respond-to("mobile"){
+                    margin-top:30px;
+                }
                 .journal-cases-header{
                     width:90%;
                     margin:auto;
                     position:relative;
+                    @include respond-to("mobile"){
+                        width:100%;
+                    }
                     h1{
                         font-size:24px;
                         font-weight:600;
@@ -3938,6 +4062,9 @@ body{
                         color:$black;
                         font-weight:400;
                         font-size:16px;
+                        @include respond-to("mobile"){
+                            display: none;
+                        }
                     }
                 }
             }
@@ -3948,11 +4075,18 @@ body{
                 position: relative;
                 overflow:hidden;
                 height:340px;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                    height:100%;
+                }
                 .journal-cases-plashka-back{
                     position:absolute;
                     bottom:0px;
                     right:-10%;
                     width:120%;
+                    @include respond-to("mobile"){
+                        display: none;
+                    }
                 }
                 .journal-cases-plashka-flex{
                     width:90%;
@@ -3963,13 +4097,25 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    @include respond-to("mobile"){
+                        height:100%;
+                        flex-direction: column-reverse;
+                    }
                     .journal-cases-plashka-text{
                         width:49%;
+                        @include respond-to("mobile"){
+                            width:100%;
+                            margin-bottom:30px;
+                        }
                         h1{
                             font-size:18px;
                             font-weight:500;
                             line-height: 26px;
                             color:$black;
+                            @include respond-to("mobile"){
+                                font-size:14px;
+                                line-height: 18px;
+                            }
                         }
                         p{
                             @extend .p;
@@ -3977,6 +4123,12 @@ body{
                             margin-top:20px;
                             font-weight:400;
                             line-height: 26px;
+                            @include respond-to("mobile"){
+                                margin-top:10px;
+                                margin-bottom:20px;
+                                font-size:12px;
+                                line-height: 18px;
+                            }
                         }
                         a{
                             font-size:18px;
@@ -3984,15 +4136,30 @@ body{
                             padding:15px 60px;
                             border:1px solid $primary;
                             border-radius:10px;
+                            @include respond-to("mobile"){
+                                padding:15px 0px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width:100%;
+                                font-size:12px;
+                            }
                         }
                     }
                     .journal-cases-plashka-image{
                         width:40%;
+                        @include respond-to("mobile"){
+                            width:100%;
+                            margin-top:20px;
+                        }
                         img{
                             height:260px;
                             width:100%;
                             object-fit: cover;
                             border-radius:20px;
+                            @include respond-to("mobile"){
+                                height:100%;
+                            }
                         }
                     }
                 }
@@ -4008,12 +4175,21 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include respond-to("mobile"){
+        margin-top:30px;
+        flex-direction: column;
+    }   
     .journal-news-line-item{
         width:48%;
         height:470px;
         background-color:#fff;
         border-radius:20px;
         overflow:hidden;
+        @include respond-to("mobile"){
+            width:100%;
+            height:100%;
+            margin-top:10px;
+        }
         img{
             width:100%;
             height:210px;
@@ -4026,6 +4202,11 @@ body{
             font-size:18px;
             line-height: 26px;
             font-weight:400;
+            @include respond-to("mobile"){
+                font-size:12px;
+                line-height: 18px;
+                margin-top:10px;
+            }
         }
         h1{
             width:90%;
@@ -4035,6 +4216,11 @@ body{
             line-height: 26px;
             font-weight:600;
             margin-bottom:50px;
+            @include respond-to("mobile"){
+                font-size:12px;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
         }
         a{
             margin-left:20px;
@@ -4042,6 +4228,17 @@ body{
             padding:15px 60px;
             border:1px solid $primary;
             border-radius:10px;
+            @include respond-to("mobile"){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left:auto;
+                margin-right:auto;
+                width:90%;
+                padding:15px 0px;
+                font-size:14px;
+                margin-bottom:30px;
+            }
         }
     }
 }
@@ -4050,13 +4247,23 @@ body{
     background-color:#fff;
     border-radius:20px;
     border:1px solid #e6e6e6;
+    @include respond-to("mobile"){
+        margin-top:30px;
+    }   
     .journal-materials-header{
         margin-top:30px;
         margin-left:30px;
+        @include respond-to("mobile"){
+            margin-top:10px;
+            margin-left:20px;
+        }
         h1{
             font-size:24px;
             color:$black;
             font-weight:600;
+            @include respond-to("mobile"){
+                font-size:20px;
+            }
         }
     }
     .journal-materials-slider{
@@ -4066,6 +4273,11 @@ body{
         margin-left:auto;
         margin-right:auto;
         margin-bottom:50px;
+        @include respond-to("mobile"){
+            width:calc(100% - 40px);
+            margin-top:20px;
+            margin-bottom:10px;
+        }
         .slick-arrow{
             position:absolute;
             top:20%;
@@ -4094,16 +4306,27 @@ body{
                 display: flex;
                 .journal-materials-slider-item{
                     margin:0px 10px;
+                    @include respond-to("mobile"){
+                        margin:0px;
+                    }
                     img{
                         height:120px;
                         border-radius:20px;
                         overflow:hidden;
+                        @include respond-to("mobile"){
+                            height:150px;
+                        }
                     }
                     h1{
                         margin-top:30px;
                         font-size:18px;
                         font-weight:600;
                         line-height: 26px;
+                        @include respond-to("mobile"){
+                            margin-top:10px;
+                            font-size:12px;
+                            line-height: 18px;
+                        }
                     }
                 }
             }
@@ -4116,15 +4339,24 @@ body{
     margin-top:50px;
     @include flex-between;
     flex-wrap: wrap;
+    @include respond-to("mobile"){
+        margin-top:30px;   
+    }
     .journal-universial-item{
         width:49%;
         margin-top:20px;
         background-color:$white;
         border-radius:20px;
         overflow:hidden;
+        @include respond-to("mobile"){
+            width:100%;
+        }
         .journal-universial-item-image{
             width:100%;
             height:210px;
+            @include respond-to("mobile"){
+                height:140px
+            }
             img{
                 width:100%;
                 height:100%;
@@ -4146,6 +4378,9 @@ body{
                 font-size:18px;
                 font-weight:400;
                 margin:0;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                }
             }
             p{
                 margin-left:20px;
@@ -4159,10 +4394,17 @@ body{
             width:90%;
             margin:auto;
             margin-top:20px;
+            @include respond-to("mobile"){
+                margin-top:10px;
+            }
             h1{
                 font-size:18px;
                 font-weight:600;
                 line-height: 26px;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    line-height: 18px;;
+                }
             }
             p{
                 margin-top:50px;
@@ -4170,6 +4412,11 @@ body{
                 font-size:18px;
                 font-weight:400;
                 line-height: 26px;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                    font-size:12px;
+                    line-height: 18px;
+                }
             }   
         }
     }
@@ -4183,12 +4430,22 @@ body{
     overflow:hidden;
     height:535px;
     margin-top:50px;
+    @include respond-to("mobile"){
+        height:100%;   
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
     .journal-footer-background{
         position:absolute;
         top:-50px;
         right:0;
         width:30%;
         z-index:1;
+        @include respond-to("mobile"){
+            display: none;
+        }
         img{
             width:100%;
             height:100%;
@@ -4201,6 +4458,12 @@ body{
         right:0;
         width:30%;
         z-index:2;
+        @include respond-to("mobile"){
+            position: relative;
+            width: 100%;
+            margin:20px auto;
+            margin-bottom:0px;
+        }
     }
     .journal-footer-content{
         margin-left:30px;
@@ -4210,6 +4473,11 @@ body{
         width:60%;
         height:100%;
         flex-direction: column;
+        @include respond-to("mobile"){
+            width:calc(100% - 20px);
+            margin-top:20px;
+            margin-left:0;
+        }
         h1{
             margin:0;
             @extend .h2;
@@ -4219,20 +4487,39 @@ body{
             line-height: 26px;
             margin-top:20px;
             margin-bottom:0;
+            @include respond-to("mobile"){
+                line-height: 18px;
+            }
         }
         .journal-footer-flex{
             @include flex-between;
             margin-top:40px;
+            @include respond-to("mobile"){
+                width:100%;
+                margin-top:20px;
+            }
             a{
                 color:$white;
                 background:$gradient;
                 padding:15px 60px;
                 border-radius:10px;
+                @include respond-to("mobile"){
+                    width:100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding:15px 0px;
+                    font-size:14px;
+
+                }
             }
             img{
                 width:100px;
                 height:100px;
                 margin-left:30px;
+                @include respond-to("mobile"){
+                    display: none;
+                }
             }
         }
     }
@@ -4246,12 +4533,18 @@ body{
     height:336px;
     width:100%;
     position:relative;
+    @include respond-to("mobile"){
+        height:100%;
+    }
     .journal-content-main-section-back{
         position:absolute;
         bottom:0px;
         right:0px;
         width:50%;
         z-index: 1;
+        @include respond-to("mobile"){
+            width:120%;
+        }
         img{
             width:100%;
             height:100%;
@@ -4268,15 +4561,26 @@ body{
         z-index: 2;
         .journal-content-main-section-content{
             width:48%;
+            @include respond-to("mobile"){
+                width:100%;
+            }
             h1{
                 @extend .h2;
                 margin:0;
+                @include respond-to("mobile"){
+                    margin-top:20px;
+                    font-size:16px;
+                }
             }
             p{
                 margin-top:30px;
                 margin-bottom:0;
                 @extend .p;
                 width:80%;
+                @include respond-to("mobile"){
+                    width:90%;
+                    margin-top:10px;
+                }
             }
         }
         .journal-content-main-section-image{
@@ -4285,6 +4589,11 @@ body{
             border-radius:20px;
             overflow:hidden;
             height:90%;
+            @include respond-to("mobile"){
+                width:100%;
+                height:100%;
+                margin:20px auto;
+            }
             img{
                 width:100%;
                 height:100%;
@@ -4299,16 +4608,27 @@ body{
     width:100%;
     @include flex-between;
     flex-wrap: wrap;
+    @include respond-to("mobile"){
+        margin-top:20px;   
+    }
     .journal-cases-section-item{
         width:49%;
         height:470px;
         border-radius:20px;
         border:1px solid #E6E6E6;
         margin-top:20px;
+        overflow: hidden;
+        @include respond-to("mobile"){
+            width:100%;
+            height:100%;
+        }
         img{
             width:100%;
             height:210px;
             object-fit: cover;
+            @include respond-to("mobile"){
+                height:150px;
+            }
         }
         h1{
             @extend .p;
@@ -4326,6 +4646,9 @@ body{
             margin-top:20px;
             width:90%;
             margin-bottom:50px;
+            @include respond-to("mobile"){
+                margin-bottom:20px;
+            }
         }
         p{
             color:$primary;
@@ -4334,6 +4657,16 @@ body{
             padding:15px 50px;
             border-radius:15px;
             display: inline;
+            @include respond-to("mobile"){
+                padding:15px 0px;
+                margin:auto;
+                width:90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                font-size:14px;
+            }
         }
 
     }
@@ -4342,6 +4675,9 @@ body{
 .journal-text-navigations{
     @include flex-between;
     justify-content: flex-start;
+    @include respond-to("mobile"){
+     flex-direction: row;   
+    }
     p{
         @extend .p;
         font-weight:600;
@@ -4358,16 +4694,27 @@ body{
     h1{
         margin:0;
         @extend .h2;
+        @include respond-to("mobile"){
+            font-size:16px;
+            line-height: 20px;
+        }
     }
 }
 .journal-text-links{
     @include flex-between;
     margin-top:30px;
     justify-content: flex-start;
+    @include respond-to("mobile"){
+        margin-top:10px;
+        flex-direction: row;   
+    }
     p{
         color:#848484;
         font-size: 21px;
         font-weight:400;
+        @include respond-to("mobile"){
+            font-size: 12px;
+        }
     }
     a{
         text-decoration: underline;
@@ -4375,6 +4722,10 @@ body{
         font-weight:400;
         color:#848484;
         margin-left:50px;
+        @include respond-to("mobile"){
+            font-size:12px;
+            margin-left:20px;
+        }
     }
 }
 .journal-text-content{
@@ -4395,10 +4746,17 @@ body{
         font-size:28px;
         font-weight:400;
         color:$black;
+        @include respond-to("mobile"){
+            font-size:14px;
+            line-height: 18px;
+        }
     }
     p{
         @extend .p;
         line-height: 26px;
+        @include respond-to("mobile"){
+            line-height: 18px;
+        }
     }
     .journal-text-content-quote{
         background-color:$white;
@@ -4410,18 +4768,28 @@ body{
         line-height: 30px;
         font-weight:400;
         margin:20px 0px;
+        @include respond-to("mobile"){
+            font-size:14px;
+            line-height: 18px;
+        }
         a{
             color:$primary;
         }
     }
     img{
         max-width:30%;
+        @include respond-to("mobile"){
+            max-width: 100%;
+        }
     }
 }
 
 .journal-glo-filters{
     margin-top:60px;
     width:100%;
+    @include respond-to("mobile"){
+        margin-top:30px;   
+    }
     .journal-glo-filters-search{
         width:100%;
         form{
@@ -4436,6 +4804,11 @@ body{
                 padding-left:50px;
                 background:none;
                 padding-bottom:10px;
+                @include respond-to("mobile"){
+                    font-size:12px;
+                    width:calc(100% - 30px);
+                    padding-left:30px;
+                }
             }
             &:before{
                 position:absolute;
@@ -4449,6 +4822,10 @@ body{
                 background-position:center;
                 background-repeat: no-repeat;
                 background-size:100%;
+                @include respond-to("mobile"){
+                    width:18px;
+                    height:18px;
+                }
             }
         }
     }
@@ -4456,6 +4833,13 @@ body{
         width:100%;
         @include flex-between;
         margin-top:60px;
+        @include respond-to("mobile"){
+            margin-top:30px;
+            flex-direction: row;
+            width:100%;
+            overflow-x: scroll;
+            display: -webkit-inline-box;
+        }
         p{
             font-size:20px;
             font-weight:900;
@@ -4466,6 +4850,12 @@ body{
             border-radius: 100%;
             margin:0px;
             cursor: pointer;
+            @include respond-to("mobile"){
+                width:30px;
+                height:30px;
+                margin-right:10px;
+                font-size:16px;
+            }
             &:nth-child(1){
                 width:70px;
                 background:$gradient;
@@ -4481,6 +4871,9 @@ body{
 .journal-glo-flex{
     @include flex-between;
     flex-wrap: wrap;
+    @include respond-to("mobile"){
+       flex-direction: row;
+    }
     .journal-glo-flex-item{
         width:25%;
         display: flex;
@@ -4488,11 +4881,18 @@ body{
         justify-content: space-between;
         flex-direction: column;
         margin-top:60px;
+        @include respond-to("mobile"){
+            width:48%;
+            margin-top:20px;
+        }
         h1{
             color:$black;
             font-size:40px;
             font-weight:500;
             margin:0;
+            @include respond-to("mobile"){
+                font-size:14px;
+            }
         }
         a{
             margin:20px 0px;
@@ -4500,6 +4900,10 @@ body{
             text-decoration: underline;
             font-size: 22px;
             font-weight:500;
+            @include respond-to("mobile"){
+                font-size:12px;
+                margin:20px 0px;
+            }
         }
     }
 }
