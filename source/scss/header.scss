@@ -226,8 +226,13 @@ header{
                 color:#797979;
                 font-size:16px;
                 font-weight: 400;
+                transition:all 0.3s ease 0s;
                 @media(max-width:1300px){
                     font-size:14px;
+                   
+                }
+                &:hover{
+                    color:$black;
                 }
             }
             &.sub-menu{
@@ -292,6 +297,9 @@ header{
         border-radius:100px;
         width:230px;
         height:53px;
+        &:hover{
+            background:linear-gradient(90deg, #C96236, #963206);
+        }
         a{
             font-size:14px;
             color:$white;

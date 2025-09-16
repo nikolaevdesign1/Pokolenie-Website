@@ -9,6 +9,7 @@ $black: #353232;
 
 *{
     outline:none;
+    transition:all 0.3s ease 0s;
 }
 
 
@@ -147,8 +148,12 @@ body{
     color:$black;
     font-size:16px;
     font-weight:500;
+    transition:all 0.3s ease 0s;
     @include respond-to("mobile") {
         font-size:14px;
+    }
+    &:hover{
+        background-color:#E7E7E7;
     }
 
 }
@@ -181,6 +186,13 @@ body{
         top:50%;
         transform: translate(0%,-50%);
         @include flex-center;
+        transition: all 0.3s ease 0s;
+    }
+    &:hover{
+        background:linear-gradient(90deg, #C96236, #963206);
+        .gradient_button_icon{
+            transform: translate(0%,-50%) rotate(45deg);
+        }
     }
 
 }
@@ -1419,12 +1431,15 @@ body{
             }
             .section-news-item{
                 width:100%;
-                height:150px;
+                height:48%;
                 position:relative;
                 border-radius:20px;
                 overflow:hidden;
                 position:relative;
                 margin-top:10px;
+                @include respond-to("mobile"){
+                    height:150px;
+                }
                 .background-news{
                     position:absolute;
                     z-index:1;
@@ -5470,7 +5485,9 @@ body{
 .step1{
     display: none;
 }
-
+.brief-content-steps.active{
+    display: block!important;
+}
 
 .step2{
     display: none;
@@ -5797,6 +5814,15 @@ body{
                     background-color:#fff;
                     border-radius:20px;
                     overflow:hidden;
+                    &:hover{
+                        .coach_button{
+                            background:$primary;
+                            color:$white;
+                            p{
+                                color:$white;
+                            }
+                        }
+                    }
                     @include respond-to("mobile"){
                         width:100%;
                         margin-top:10px;
@@ -5914,10 +5940,12 @@ body{
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                transition: all 0.3s ease 0s;
                                 p{
                                     color:$primary;
                                     font-size:18px;
                                     font-weight:500;
+                                    transition: all 0.3s ease 0s;
                                     @include respond-to("mobile"){
                                         font-size:14px;
                                     }
@@ -5994,6 +6022,10 @@ body{
                     color:$white;
                     margin-top:20px;
                     font-size:18px;
+                    &:hover{
+                        background:linear-gradient(90deg, #C96236, #963206);
+                    }
+
             }
         }
     }
@@ -6179,6 +6211,97 @@ footer{
     }
 }
 
+
+///Contact account start
+
+.brief-contact-data{
+    width:100%;
+    padding-top:100px;
+    .contact-data-form{
+        width:80%;
+        margin:auto;
+        label{
+            @include flex-between;
+            margin-top:30px;
+            p{
+                @extend .p;
+                font-weight:500;
+                width:28%;
+                margin:0;
+            }
+            input{
+                width:70%;
+                border:none;
+                border-bottom:1px solid #797979;
+                font-size:18px;
+                padding-bottom:10px;
+                background:transparent;
+                text-align: center;
+                &.file{
+                    border-bottom:0;
+                }
+            }
+        }
+        .form-sub-info{
+            width:100%;
+            display: flex;
+            align-items: flex-end;
+            margin-top:20px;
+            justify-content: flex-end;
+            p{
+                width:70%;
+                @extend .p;
+                margin:0;
+                color:#797979;
+                span{
+                    color:$primary;
+                    text-decoration: underline;
+                }
+
+            }
+        }
+        button{
+            font-size:18px;
+            color:$white;
+            background:$gradient;
+            border-radius:10px;
+            padding:15px 60px;
+            margin:50px 0px;
+            border:none;
+            cursor:pointer;
+
+        }
+    }
+}
+.status-admin-container-text{
+    width:80%;
+    margin:30px;
+    h1{
+        font-size:40px;
+        color:$black;
+        margin:0px;
+    }
+    p{
+        @extend .p;
+        margin-top:15px;
+        span{
+            color:$primary;
+
+        }
+    }
+}
+.status-admin-container-image{
+    width:100%;
+    height:100%;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+///contact account finish
 
 @import "coaches.scss";
 //section5 finish
