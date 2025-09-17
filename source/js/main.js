@@ -3,7 +3,7 @@ $('.section2_slider').slick({
     slidesToScroll: 1,
     speed: 600,
     arrows: false,
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 480,
@@ -20,14 +20,18 @@ $('.section4-logos-slider').slick({
     speed: 600,
     autoplay:true,
     arrows: false,
-    slidesToShow:7.3,   
+    slidesToShow:7,   
     responsive: [
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
+        breakpoint: 1300,
+        settings:{
+          slidesToShow: 6,
+        },
       }
     ]
     
@@ -175,4 +179,32 @@ $('.go_pass3').on('click',function(){
 
   $('.mobile-burger').on('click',function(){
     $('.mobile-menu, .mobile-burger').toggleClass("active");
+  });
+
+
+  document.querySelectorAll(".select-wrapper").forEach(wrapper => {
+    const customSelect = wrapper.querySelector(".custom-select");
+    const trigger = customSelect.querySelector(".select-trigger");
+    const options = customSelect.querySelectorAll(".options li");
+    const realSelect = wrapper.querySelector("select");
+  
+    trigger.addEventListener("click", () => {
+      customSelect.classList.toggle("open");
+    });
+  
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        const value = option.getAttribute("data-value");
+        trigger.textContent = option.textContent;
+        realSelect.value = value;
+        customSelect.classList.remove("open");
+      });
+    });
+  
+    // закрытие при клике вне
+    document.addEventListener("click", e => {
+      if (!customSelect.contains(e.target)) {
+        customSelect.classList.remove("open");
+      }
+    });
   });

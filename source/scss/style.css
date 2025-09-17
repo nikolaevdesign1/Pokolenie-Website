@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   outline: none;
   transition: all 0.3s ease 0s;
@@ -44,6 +45,12 @@ h1, h2, h3, h4, p, a, li, button, input, div {
     line-height: 30px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .h1, .section-coaches .coahes_header h1, .personal-header h1, .contact-flex .contact-flex-item h1, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text h1, .about-coach-list .about-coach-flex .about-coach-header h1, .about-coach-section .about-coach-section-flex .about-coach-section-item h1, .about-coach-section .about-coach-section-header h1, .coaches-keys .coaches-keys-header h1, .coaches-person-slider-block .coaches-person-header h1, .coaches-grey-section .coacheas-grey-content .coaches-grey-text h1, .coaches-list .coaches-list-flex .coaches-list-header h1, .coaches-adv-section .coaches-adv-header h1, .students-news .students-news-header h1, .students-text-right .students-text-right-flex .student-text-right-left h1, .students-adv .students-adv-header h1, .student-icons-section .students-icons-section-content .students-icons-section-content-header h1, .student-about .student-about-content .student-about-item .student-about-item-text h1, .student-about .student-about-header h1, .section-footer-qr .section-footer-qr-plashka .plashka-content h1, .section-magazine .section-magazine-header h1, .section-news .section-news-header h1, .section-students-slider .section-students-slider-header h1, .students-section .students-section-header h1, .section8 .section8-content .section8-text h1, .section5 .section5-header h1, .section4-header h1, .section3 .section3-content .section3-header h1, .section2 .section_header h1 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
 
 .h2, .popup-content-thanks h1, .popup-registration .popup-content .popup-content-registrations form h1, .popup-years .popup-content h1, .journal-text-header h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1, .journal-footer .journal-footer-content h1, .journal-header h1, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
   font-size: 45px;
@@ -62,6 +69,12 @@ h1, h2, h3, h4, p, a, li, button, input, div {
     line-height: 30px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .h2, .popup-content-thanks h1, .popup-registration .popup-content .popup-content-registrations form h1, .popup-years .popup-content h1, .journal-text-header h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content h1, .journal-footer .journal-footer-content h1, .journal-header h1, .testimonials-main .testimonials-header h1, .contact-header h1, .coach-adv .coach-adv-flex .coach-adv-ava .coach-adv-ava-content h1, .main-coach .main-coach-flex .main-coach-content .main-coach-content-header h1, .coaches-services .coaches-services-header h1, .student-text-section .students-text-section-flex .student-text-section-content h1, .section-faq .section-faq-header h1, .parent-list .parent-list-header h1, .parent-about .parent-about-header h1, .parent-main .parent-flex .parent-text h1, .section7 .section7-flex .section7-text h1, .section6 .section6-flex .section6-text h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
 
 .p, .status-admin-container-text p, .brief-contact-data .contact-data-form .form-sub-info p, .brief-contact-data .contact-data-form label p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .brief-content-steps h1, .personal-flex .personal-admin .personal-admin-container-start p, .personal-flex .personal-sidebar .personal-sidebar-container ul li a, .personal-flex .personal-sidebar .personal-sidebar-container h1, .personal-main-plashka .personal-main-plashka-content p, .forgot-pass, .popup-registration .popup-content .popup-content-background p, .popup-registration .popup-content .popup-content-background h1, .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header .journal-header-absolute, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text li, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
   font-size: 18px;
@@ -77,6 +90,12 @@ h1, h2, h3, h4, p, a, li, button, input, div {
   .p, .status-admin-container-text p, .brief-contact-data .contact-data-form .form-sub-info p, .brief-contact-data .contact-data-form label p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .brief-content-steps h1, .personal-flex .personal-admin .personal-admin-container-start p, .personal-flex .personal-sidebar .personal-sidebar-container ul li a, .personal-flex .personal-sidebar .personal-sidebar-container h1, .personal-main-plashka .personal-main-plashka-content p, .forgot-pass, .popup-registration .popup-content .popup-content-background p, .popup-registration .popup-content .popup-content-background h1, .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header .journal-header-absolute, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text li, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .p, .status-admin-container-text p, .brief-contact-data .contact-data-form .form-sub-info p, .brief-contact-data .contact-data-form label p, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2, .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(2), .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_flex .coach_flex_item p:nth-child(1), .brief-content-steps h1, .personal-flex .personal-admin .personal-admin-container-start p, .personal-flex .personal-sidebar .personal-sidebar-container ul li a, .personal-flex .personal-sidebar .personal-sidebar-container h1, .personal-main-plashka .personal-main-plashka-content p, .forgot-pass, .popup-registration .popup-content .popup-content-background p, .popup-registration .popup-content .popup-content-background h1, .journal-text-content p, .journal-text-navigations p, .journal-cases-section .journal-cases-section-item h2, .journal-cases-section .journal-cases-section-item h1, .journal-content-main-section .journal-content-main-section-flex .journal-content-main-section-content p, .journal-footer .journal-footer-content p, .journal-universials .journal-universial-item .journal-universal-item-tags p, .journal-section .journal-flex .journal-content .journal-cases-plashka .journal-cases-plashka-flex .journal-cases-plashka-text p, .journal-section .journal-flex .journal-sidebar .journal-ads-tg .journal-ads-tg-header p, .journal-section .journal-flex .journal-sidebar .journal-big-cat ul li a, .journal-header .journal-header-absolute, .journal-header p, .testimonials-main .testimonials-flex .test-sidebar .test-siderbar-menu a p, .contact-flex .contact-flex-item p, .coach-adv .coach-adv-flex .coach-adv-text .coach-adv-text-item p, .about-coach-plashka-section .about-coach-plashka .about-coach-plashka-flex .about-coach-plashka-text p, .about-coach-list .about-coach-flex .about-coach-content .about-coach-content-item p, .about-coach-section .about-coach-section-flex .about-coach-section-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list ul li, .main-coach .main-coach-flex .main-coach-content .main-coach-content-list p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item p, .main-coach .main-coach-flex .main-coach-content .main-coach-content-flex .main-coach-content-item h2, .coaches-keys .coaches-keys-flex .coaches-key-flex-item .coaches-key-content p, .coaches-services .coaches-services-flex .coaches-services-item p, .coaches-grey-section .coacheas-grey-content .coaches-grey-text p, .coaches-list .coaches-list-flex .coaches-list-content .coaches-list-item .coaches-list-text p, .coaches-list .coaches-list-flex .coaches-list-header p, .coaches-adv-section .coaches-adv-header p, .students-text-right .students-text-right-flex .student-text-right-left h2, .student-icons-section .students-icons-section-content .students-icons-section-content-header-flex .students-icons-section-content-header-item p, .student-text-section .students-text-section-flex .student-text-section-content p, .parent-list .parent-list-flex .parent-list-content .parent-list-item p, .parent-about .parent-about-flex .parent-about-item p, .parent-main .parent-flex .parent-text li, .parent-main .parent-flex .parent-text p, .section-footer-qr .section-footer-qr-plashka .plashka-content p, .section-magazine .section-magazine-flex .section-magazine-item p, .section-magazine .section-magazine-flex .section-magazine-item h2, .students-section .students-section-flex .student-flex-item .students-item-content .students-item-content-text p, .section8 .section8-content .section8-text p, .section6 .section6-flex .section6-text ul li, .section6 .section6-flex .section6-text p, .section5 .section5-flex .section5-item p, .section3 .section3-content .section3-flex .section3_item p, .section2 .section2_slider .slick-list .slick-track .section2_slider_item .section2_slider_content ul li, .section2 .section_header p, .section1_content .section1_flex .section1_text p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -113,7 +132,7 @@ body {
   display: block;
   position: relative;
   margin: 0px auto;
-  width: 95%;
+  width: 90%;
   height: 100%;
   max-width: 1280px;
 }
@@ -132,7 +151,7 @@ header {
   z-index: 100;
 }
 header .desktop_header {
-  width: 98%;
+  width: 90%;
   height: 100%;
   position: relative;
   max-width: 1280px;
@@ -364,7 +383,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
 }
 @media (max-width: 1300px) {
   .header_logo a img {
-    max-width: 220px;
+    max-width: 190px;
   }
 }
 .header_logo a p {
@@ -417,7 +436,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   font-weight: 400;
   transition: all 0.3s ease 0s;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .header_menu ul li a {
     font-size: 14px;
   }
@@ -505,6 +524,11 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   width: 230px;
   height: 53px;
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .header_buttons .login_button {
+    width: 200px;
+  }
+}
 .header_buttons .login_button:hover {
   background: linear-gradient(90deg, #C96236, #963206);
 }
@@ -529,7 +553,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   width: 100vw;
   height: 100vh;
   position: relative;
-  max-height: 1000px;
+  max-height: 1100px;
   overflow: hidden;
 }
 @media (max-width: 480px) {
@@ -555,6 +579,8 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   border-radius: 40px;
   overflow: hidden;
   height: calc(100vh - 150px);
+  min-height: 870px;
+  max-height: 950px;
 }
 @media (max-width: 480px) {
   .section1_content {
@@ -595,7 +621,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   z-index: 2;
   position: relative;
   display: flex;
@@ -605,6 +631,11 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
 @media (max-width: 480px) {
   .section1_content .section1_flex {
     flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section1_content .section1_flex {
+    margin-top: 20px;
   }
 }
 @media (max-width: 480px) {
@@ -627,6 +658,11 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
 }
 .section1_content .section1_buttons {
   width: 30%;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section1_content .section1_buttons {
+    width: 35%;
+  }
 }
 @media (max-width: 480px) {
   .section1_content .section1_buttons {
@@ -882,7 +918,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   }
 }
 .section3 .section3-content .section3-flex {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 100px;
   margin-left: 50px;
   width: calc(100% - 100px);
@@ -894,6 +930,11 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
 @media (max-width: 480px) {
   .section3 .section3-content .section3-flex {
     flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section3 .section3-content .section3-flex {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 480px) {
@@ -939,6 +980,13 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   padding-bottom: 120px;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section4 {
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 480px) {
   .section4 {
@@ -1006,6 +1054,11 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   height: 240px;
   margin: 0px 10px;
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section4-logos-slider .slick-list .slick-track .slider-item {
+    height: 190px;
+  }
+}
 @media (max-width: 480px) {
   .section4-logos-slider .slick-list .slick-track .slider-item {
     height: 140px;
@@ -1067,6 +1120,13 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   color: #FF4E00;
   font-size: 64px;
   font-weight: 600;
+  margin-bottom: 0px;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section5 .section5-flex .section5-item h1 {
+    font-size: 58px;
+    margin-left: 30px;
+  }
 }
 @media (max-width: 480px) {
   .section5 .section5-flex .section5-item h1 {
@@ -1078,10 +1138,16 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
 }
 .section5 .section5-flex .section5-item p {
   color: #8E8E8E;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 60%;
   margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section5 .section5-flex .section5-item p {
+    width: 70%;
+    margin-left: 30px;
+  }
 }
 @media (max-width: 480px) {
   .section5 .section5-flex .section5-item p {
@@ -1098,6 +1164,12 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   height: 65px;
   right: 30px;
   top: -30px;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section5 .section5-flex .section5-item .section5-item-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 480px) {
   .section5 .section5-flex .section5-item .section5-item-icon {
@@ -7275,7 +7347,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   }
 }
 .section-coaches .coaches_catalog .coaches_sidebar {
-  width: 25%;
+  width: 30%;
 }
 @media (max-width: 480px) {
   .section-coaches .coaches_catalog .coaches_sidebar {
@@ -7283,7 +7355,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   }
 }
 .section-coaches .coaches_catalog .coaches_list {
-  width: 72%;
+  width: 68%;
 }
 @media (max-width: 480px) {
   .section-coaches .coaches_catalog .coaches_list {
@@ -7309,13 +7381,6 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-}
-.section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item:hover .coach_button {
-  background: #FF4E00;
-  color: #ffffff;
-}
-.section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item:hover .coach_button p {
-  color: #ffffff;
 }
 @media (max-width: 480px) {
   .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item {
@@ -7434,11 +7499,21 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   font-weight: 400;
   margin-bottom: 0;
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription h2 {
+    margin-top: 0px;
+  }
+}
 .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription p {
   margin-top: 0;
   color: #353232;
   font-weight: 400;
   font-size: 18px;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 480px) {
   .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_decription p {
@@ -7457,16 +7532,34 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   justify-content: center;
   transition: all 0.3s ease 0s;
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_button {
+    height: 45px;
+  }
+}
 .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_button p {
   color: #FF4E00;
   font-size: 18px;
   font-weight: 500;
   transition: all 0.3s ease 0s;
 }
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_button p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 480px) {
   .section-coaches .coaches_catalog .coaches_list .coaches_list_flex .coaches_item .coach_item_container .coach_content .coach_button p {
     font-size: 14px;
   }
+}
+
+.coaches_item:hover .coach_button {
+  background: #FF4E00;
+  color: #ffffff;
+}
+.coaches_item:hover .coach_button p {
+  color: #ffffff !important;
 }
 
 .coaches_list_button {
@@ -7581,7 +7674,7 @@ header .mobile-menu .mobile-menu-content .mobile-menu-button p {
   border: none;
   cursor: pointer;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 18px;
 }
 .coaches_sidebar .coaches-filter .coaches_filter_form button:hover {
@@ -7902,5 +7995,94 @@ footer .footer_sub a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+}
+
+select {
+  appearance: none; /* убираем дефолтную стрелку */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  /* кастомная стрелка */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
+/* Скрываем реальный select */
+.select-wrapper select {
+  display: none;
+}
+
+/* Контейнер */
+.custom-select {
+  position: relative;
+  width: 100%;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+
+/* Заголовок */
+.select-trigger {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.select-trigger:before {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../../images/str.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #868585;
+  transform: rotate(0deg);
+}
+
+/* Список */
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-radius: 0px 0px 6px 6px;
+  background: #f5f5f5;
+  max-height: 180px;
+  overflow-y: auto;
+  display: none; /* скрыт по умолчанию */
+  z-index: 10;
+}
+
+.options li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.options li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.options li:hover {
+  background: #f0f0f0;
+}
+
+/* активный список */
+.custom-select.open .options {
   display: block;
 }/*# sourceMappingURL=style.css.map */

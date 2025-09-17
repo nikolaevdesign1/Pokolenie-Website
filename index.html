@@ -316,7 +316,7 @@
                     </div>
                     <div class="section5-item">
                         <h1>5</h1>
-                        <p>городов
+                        <p>городов<br>
                             присутствия</p>
                         <div class="section5-item-icon">
                             <img src = "images/static-icon.svg">
@@ -342,43 +342,95 @@
                             <form action="post" class="coaches_filter_form">
                                 <label for="">
                                     <p>Набор открыт</p>
-                                    <select name="" id="">
-                                        <option value="">Не важно</option>
-                                        <option value="">Закрыт</option>
-                                        <option value="">Набор открыт</option>
-                                        <option value="">Когда-то откроется</option>
-                                        <option value="">Никогда не откроется</option>
-                                    </select>
+                                    <div class="select-wrapper">
+                                        <!-- Настоящий select (для форм), но скрыт -->
+                                        <select id="real-select" name="mode">
+                                          <option value="online">Online</option>
+                                          <option value="offline">Offline</option>
+                                          <option value="combine">Combine</option>
+                                        </select>
+                                      
+                                        <!-- Кастомный select -->
+                                        <div class="custom-select">
+                                          <div class="select-trigger">Не важно </div>
+                                          <ul class="options">
+                                            <li data-value="online">Не важно</li>
+                                            <li data-value="offline">Открыт</li>
+                                            <li data-value="combine">Закрыт</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </label>
                                 <label for="">
                                     <p>Выберите город</p>
-                                    <select name="" id="">
-                                        <option value="">Любой</option>
-                                        <option value="">Москва</option>
-                                        <option value="">Санкт-Петербург</option>
-                                        <option value="">Ростов</option>
-                                        <option value="">Казань</option>
-                                    </select>
+                                    <div class="select-wrapper">
+                                        <!-- Настоящий select (для форм), но скрыт -->
+                                        <select id="real-select2" name="mode">
+                                          <option value="online">Online</option>
+                                          <option value="offline">Offline</option>
+                                          <option value="combine">Combine</option>
+                                          <option value="unknown">I don't know</option>
+                                          <option value="extra">Extra line</option>
+                                        </select>
+                                      
+                                        <!-- Кастомный select -->
+                                        <div class="custom-select">
+                                          <div class="select-trigger">Любой </div>
+                                          <ul class="options">
+                                            <li data-value="online">Любой</li>
+                                            <li data-value="offline">Москва</li>
+                                            <li data-value="combine">Санкт-Петербург</li>
+                                            <li data-value="unknown">Краснодар</li>
+                                            <li data-value="extra">Самара</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </label>
                                 <label for="">
                                     <p>Возраст участников</p>
-                                    <select name="" id="">
-                                        <option value="">17 лет</option>
-                                        <option value="">18 лет</option>
-                                        <option value="">19 лет</option>
-                                        <option value="">20 лет</option>
-                                        <option value="">25 лет</option>
-                                    </select>
+                                    <div class="select-wrapper">
+                                        <!-- Настоящий select (для форм), но скрыт -->
+                                        <select id="real-select3" name="mode">
+                                          <option value="online">Online</option>
+                                          <option value="offline">Offline</option>
+                                          <option value="combine">Combine</option>
+                                          <option value="unknown">I don't know</option>
+                                          <option value="extra">Extra line</option>
+                                        </select>
+                                      
+                                        <!-- Кастомный select -->
+                                        <div class="custom-select">
+                                          <div class="select-trigger">17 лет</div>
+                                          <ul class="options">
+                                            <li data-value="online">Любой возраст</li>
+                                            <li data-value="offline">15 лет</li>
+                                            <li data-value="combine">16 лет</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </label>
                                 <label for="">
                                     <p>Формат участия</p>
-                                    <select name="" id="">
-                                        <option value="">Online</option>
-                                        <option value="">Offline</option>
-                                        <option value="">Combine</option>
-                                        <option value="">I don't know</option>
-                                        <option value="">Extra line</option>
-                                    </select>
+                                    <div class="select-wrapper">
+                                        <!-- Настоящий select (для форм), но скрыт -->
+                                        <select id="real-select4" name="mode">
+                                          <option value="online">Online</option>
+                                          <option value="offline">Offline</option>
+                                          <option value="combine">Combine</option>
+                                          <option value="unknown">I don't know</option>
+                                          <option value="extra">Extra line</option>
+                                        </select>
+                                      
+                                        <!-- Кастомный select -->
+                                        <div class="custom-select">
+                                          <div class="select-trigger">Online </div>
+                                          <ul class="options">
+                                            <li data-value="online">Online</li>
+                                            <li data-value="offline">Любой формат</li>
+                                            <li data-value="combine">Offline</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </label>
                                 <button>Применить</button>
                             </form>
@@ -580,7 +632,6 @@
                             <li><img src="images/list-icon.svg" alt="">Нетворкинг</li>
                             <li><img src="images/list-icon.svg" alt="">Публичные выступления</li>
                             <li><img src="images/list-icon.svg" alt="">Переговоры</li>
-                            <li>и многое другое</li>
                         </ul>
                     </div>
                     <div class="section6-image">

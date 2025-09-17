@@ -7,7 +7,7 @@ header{
   
     .desktop_header{
 
-        width:98%;
+        width:90%;
         height:100%;
         position:relative;
         max-width:1280px;
@@ -195,7 +195,7 @@ header{
         img{
             max-width:250px;
             @media(max-width:1300px){
-                max-width:220px;
+                max-width:190px;
             }
         }
         p{
@@ -227,7 +227,7 @@ header{
                 font-size:16px;
                 font-weight: 400;
                 transition:all 0.3s ease 0s;
-                @media(max-width:1300px){
+                @media(max-width:1350px){
                     font-size:14px;
                    
                 }
@@ -274,6 +274,7 @@ header{
     .header_tg{
         width:50px;
         height:50px;
+       
         @include flex-center;
         position: relative;
         a{
@@ -297,6 +298,9 @@ header{
         border-radius:100px;
         width:230px;
         height:53px;
+        @media (min-width:1024px) and (max-width:1500px){
+            width:200px;
+        }  
         &:hover{
             background:linear-gradient(90deg, #C96236, #963206);
         }

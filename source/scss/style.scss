@@ -66,6 +66,11 @@ $breakpoints: (
         font-size: 24px;
         line-height: 30px;
       }
+
+    @media (min-width:1024px) and (max-width:1500px){
+        font-size:38px;
+        line-height:42px;
+    }  
 }
 .h2{
     font-size:45px;
@@ -80,6 +85,10 @@ $breakpoints: (
         font-size: 24px;
         line-height: 30px;
       }
+      @media (min-width:1024px) and (max-width:1500px){
+        font-size:34px;
+        line-height: 40px;
+      }  
 }
 .p{
     font-size:18px;
@@ -93,6 +102,11 @@ $breakpoints: (
         font-size: 12px;
         line-height: 18px;
       }
+
+    @media (min-width:1024px) and (max-width:1500px){
+        font-size:16px;
+        line-height: 22px;
+    }  
 }
 //fonts end
 
@@ -202,7 +216,7 @@ body{
     display: block;
     position:relative;
     margin:0px auto;
-    width:95%;
+    width:90%;
     height:100%;
     max-width:1280px;
     @include respond-to("mobile") {
@@ -221,7 +235,7 @@ body{
     width:100vw;
     height:100vh;
     position:relative;
-    max-height:1000px;
+    max-height:1100px;
     overflow:hidden;
     @include respond-to("mobile"){
         height:auto;
@@ -244,6 +258,8 @@ body{
     border-radius:40px;
     overflow:hidden;
     height:calc(100vh - 150px);
+    min-height:870px;
+    max-height:calc(1100px - 150px);
     @include respond-to("mobile"){
         margin-top:80px;
     }
@@ -283,10 +299,13 @@ body{
         width:90%;
         margin-left:auto;
         margin-right:auto;
-        margin-top:40px;
+        margin-top:30px;
         z-index: 2;
         position: relative;
         @include flex-between;
+        @media (min-width:1024px) and (max-width:1500px){
+            margin-top:20px;
+        }  
         @include respond-to("mobile"){
             margin-top:0px;
         }
@@ -306,6 +325,9 @@ body{
     }
     .section1_buttons{
         width:30%;
+        @media (min-width:1024px) and (max-width:1500px){
+            width:35%;
+        }  
         @include respond-to("mobile"){
             width:100%;
         }
@@ -496,12 +518,15 @@ body{
             }
         }
         .section3-flex{
-            margin-top:80px;
+            margin-top:60px;
             margin-bottom:100px;
             margin-left:50px;
             width:calc(100% - 100px);
             @include flex-between;
             align-items: flex-start;
+            @media (min-width:1024px) and (max-width:1500px){
+                margin-bottom:70px
+            }  
             @include respond-to("mobile"){
                 margin-top:0px;
                 margin-left:30px;
@@ -547,6 +572,11 @@ body{
     padding-bottom:120px;
     position:relative;
     overflow:hidden;
+    @media (min-width:1024px) and (max-width:1500px){
+        padding-top:50px;
+        margin-top:50px;
+        padding-bottom:80px;
+    }  
     @include respond-to("mobile"){
         margin-top:50px;
         padding-top:40px;
@@ -603,6 +633,9 @@ body{
                 overflow:hidden;
                 height:240px;
                 margin:0px 10px;
+                @media (min-width:1024px) and (max-width:1500px){
+                    height:190px;
+                }  
                 @include respond-to("mobile"){
                     height:140px;
                 }
@@ -659,6 +692,11 @@ body{
                 color:$primary;
                 font-size:64px;
                 font-weight:600;
+                margin-bottom: 0px;
+                @media (min-width:1024px) and (max-width:1500px){
+                    font-size:58px;
+                    margin-left:30px;
+                }  
                 @include respond-to("mobile"){
                     font-size:48px;
                     margin-left:0;
@@ -669,10 +707,14 @@ body{
             p{
                 @extend .p;
                 color:#8E8E8E;
-                margin-top:20px;
+                margin-top:10px;
                 width:60%;
                 margin-left:50px;
-                margin-bottom:50px;
+                margin-bottom:30px;
+                @media (min-width:1024px) and (max-width:1500px){
+                    width:70%;
+                    margin-left:30px
+                }  
                 @include respond-to("mobile"){
                     width:90%;
                     margin-top:10px;
@@ -687,6 +729,10 @@ body{
                 height:65px;
                 right:30px;
                 top:-30px;
+                @media (min-width:1024px) and (max-width:1500px){
+                    width:50px;
+                    height:50px;
+                }  
                 @include respond-to("mobile"){
                     display: none;
                 }
@@ -5793,13 +5839,13 @@ body{
             margin-top:15px;
         }
         .coaches_sidebar{
-            width:25%;
+            width:30%;
             @include respond-to("mobile"){
                 width:100%;
             }
         }
         .coaches_list{
-            width:72%;
+            width:68%;
             @include respond-to("mobile"){
                 width:100%;
                 margin-top:20px;
@@ -5814,15 +5860,7 @@ body{
                     background-color:#fff;
                     border-radius:20px;
                     overflow:hidden;
-                    &:hover{
-                        .coach_button{
-                            background:$primary;
-                            color:$white;
-                            p{
-                                color:$white;
-                            }
-                        }
-                    }
+                    
                     @include respond-to("mobile"){
                         width:100%;
                         margin-top:10px;
@@ -5918,12 +5956,18 @@ body{
                                     color:#797979;
                                     font-weight: 400;
                                     margin-bottom:0;
+                                    @media (min-width:1024px) and (max-width:1500px){
+                                       margin-top:0px; 
+                                    }  
                                 }
                                 p{
                                     margin-top:0;
                                     color:$black;
                                     font-weight:400;
                                     font-size:18px;
+                                    @media (min-width:1024px) and (max-width:1500px){
+                                        font-size:16px;
+                                    }  
                                     @include respond-to("mobile") {
                                         font-size:12px;
                                     }
@@ -5941,11 +5985,17 @@ body{
                                 align-items: center;
                                 justify-content: center;
                                 transition: all 0.3s ease 0s;
+                                @media (min-width:1024px) and (max-width:1500px){
+                                   height:45px;     
+                                }  
                                 p{
                                     color:$primary;
                                     font-size:18px;
                                     font-weight:500;
                                     transition: all 0.3s ease 0s;
+                                    @media (min-width:1024px) and (max-width:1500px){
+                                       font-size:16px; 
+                                    }  
                                     @include respond-to("mobile"){
                                         font-size:14px;
                                     }
@@ -5958,7 +6008,15 @@ body{
         }
     }
 }
-
+.coaches_item:hover{
+    .coach_button{
+        background:$primary;
+        color:$white;
+        p{
+            color: $white !important;
+        }
+    }
+}
 .coaches_list_button{
     padding-bottom:100px;
     width:320px;
@@ -6020,7 +6078,7 @@ body{
                     border:none;
                     cursor:pointer;
                     color:$white;
-                    margin-top:20px;
+                    margin-top:50px;
                     font-size:18px;
                     &:hover{
                         background:linear-gradient(90deg, #C96236, #963206);
@@ -6303,6 +6361,96 @@ footer{
 
 ///contact account finish
 
+//other styles
+
+select {
+    appearance: none;      /* убираем дефолтную стрелку */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    padding: 10px 40px 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  
+    /* кастомная стрелка */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+  }
+
+/* Скрываем реальный select */
+.select-wrapper select {
+    display: none;
+  }
+  
+  /* Контейнер */
+  .custom-select {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+    margin-top:5px;
+  }
+  
+  /* Заголовок */
+  .select-trigger {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    position:relative;
+    &:before{
+        position:absolute;
+        right:20px;
+        top:12px;
+        content:"";
+        width:15px;
+        height:15px;
+        background:url('../../images/str.svg');
+        background-size:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color:#868585;
+        transform: rotate(0deg);
+    }
+  }
+  
+  /* Список */
+  .options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 0px 0px 6px 6px;
+    background: #f5f5f5;
+    max-height: 180px;
+    overflow-y: auto;
+    display: none; /* скрыт по умолчанию */
+    z-index: 10;
+  }
+  
+  .options li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom:1px solid #C9C9C9;
+  }
+  .options li:nth-last-child(1){
+    border-bottom:none;
+  }
+  .options li:hover {
+    background: #f0f0f0;
+  }
+  
+  /* активный список */
+  .custom-select.open .options {
+    display: block;
+  }
 @import "coaches.scss";
 //section5 finish
 @import "footer.scss";
